@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 项目详细的标题 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    <!-- 顶部标题 -->
+    <LinearLayout
+        android:id="@+id/rl_top"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical" 
+        android:orientation="horizontal"
+        android:background="#0e8448" >
+
+        <ImageView
+            android:id="@+id/ll_top_title_window"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="18dp"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:src="@drawable/ic_back" 
+            android:background="@drawable/titlebar_left"
+            />
+        
+        <TextView
+            android:id="@+id/tv_top_title_window"
+            style="@style/TextView.Middle.Black"
+            android:layout_width="0dp"
+            android:layout_weight="7"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="20sp"
+            />
+        
+        
+        <ImageButton 
+            android:id="@+id/iv_top_window"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginRight="23dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/title_button"
+            android:src="@drawable/ic_more"
+            android:paddingTop="8dp"
+            android:clickable="true"
+            />
+        
+        
+    </LinearLayout>
+    
+    
+    
+    
+    
+
+</RelativeLayout>

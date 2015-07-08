@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+	
+    <!-- <RelativeLayout 
+                android:id="@+id/rl_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                >
+                
+                <Button 
+                    
+                    android:id="@+id/btn_projectdocument_stop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="停止"
+                    android:textSize="15sp"
+                    android:background="@drawable/public_selector_bg"
+                    />
+                
+                <Button 
+                    android:id="@+id/btn_projectdocument_download"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="下载"
+                    android:textSize="15sp"
+                    android:background="@drawable/public_selector_bg"
+                    android:layout_toRightOf="@id/btn_projectdocument_stop"
+                    android:layout_marginLeft="4dp"
+                    />
+                
+                <Button 
+                    android:id="@+id/btn_projectdocument_pause"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="暂停"
+                    android:textSize="15sp"
+                    android:background="@drawable/public_selector_bg"
+                    android:layout_toRightOf="@id/btn_projectdocument_download"
+                    android:layout_marginLeft="4dp"
+                    />
+                
+                <Button 
+                    android:id="@+id/btn_projectdocument_continue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="继续"
+                    android:textSize="15sp"
+                    android:background="@drawable/public_selector_bg"
+                    android:layout_toRightOf="@id/btn_projectdocument_pause"
+                    android:layout_marginLeft="4dp"
+                    />
+                
+                <TextView
+        			android:id="@+id/result"
+        			android:textColor="@android:color/black"
+        			android:layout_width="wrap_content"
+        			android:layout_height="wrap_content"
+        			android:layout_alignParentRight="true"
+        			android:padding="2dp" />
+                
+                <ProgressBar 
+                	android:id="@+id/pb"
+                	android:layout_width="100dp"
+                	android:layout_height="wrap_content"
+                	style="@android:style/Widget.ProgressBar.Horizontal"
+               		android:layout_toRightOf="@id/btn_projectdocument_continue"
+               		android:layout_toLeftOf="@id/result"
+               		android:paddingLeft="4dp"
+                	/>
+                
+                
+            </RelativeLayout> -->
+    
+    
+</LinearLayout>
+

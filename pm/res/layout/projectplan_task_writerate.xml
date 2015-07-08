@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sdmain"
+     >
+    
+    
+    <RelativeLayout
+        android:id="@+id/proplan_task_writerate_rl_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/titlebar_bg_nor"
+        >
+        
+       
+       <ImageView
+            android:id="@+id/proplan_task_writerate_iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back" />
+      
+        <TextView
+            style="@style/TextView.Middle.Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="任务填报"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+    
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/proplan_task_writerate_ll_bottom"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+                        android:id="@+id/proplan_task_writerate_btncancel"
+            
+            android:background="@drawable/bt_selector_bg"
+            android:text="取消"
+            android:textSize="12sp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/bt_selector_bg"
+            android:text="提交"
+            android:id="@+id/proplan_task_writerate_btnput"
+            android:textSize="12sp" />
+    </LinearLayout>
+    
+        
+        
+ 
+    <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/proplan_task_writerate_ll_bottom"
+      android:layout_below="@id/proplan_task_writerate_rl_top"
+       
+        
+        >
+        <LinearLayout 
+                    android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal"
+        android:background="@drawable/preference_first_item"
+        >
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="预期进度："
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:id="@+id/proplan_task_writerate_tvname"
+            />
+      
+            <TextView
+                android:id="@+id/proplan_task_writerate_tv_money"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="40dp"
+                android:textSize="15sp"
+                android:text="无"
+                android:textColor="#ff000000"
+                android:gravity="left|center"
+                android:paddingLeft="5dp">
+	            </TextView>
+              
+            
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/proplan_task_writerate_lltask"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/preference_item"
+        android:orientation="horizontal" >
+   
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="填报进度："
+            android:id="@+id/tv_11"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <SeekBar
+            android:id="@+id/proplan_task_writerate_tv_progress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:max="100"
+            android:maxHeight="12dp"
+            android:progress="10" />
+
+        <TextView
+            android:id="@+id/proplan_task_writerate_tv_progresstext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:minHeight="40dp"
+            android:text="10%"
+            android:textColor="#ff000000"
+            android:textSize="15sp" />
+    
+    </LinearLayout>
+      
+    <LinearLayout 
+        android:layout_width="fill_parent"
+                android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        
+        android:layout_height="wrap_content"
+        android:background="@drawable/preference_last_item"
+        >
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="填报描述："
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            />
+        
+        <EditText 
+            android:id="@+id/proplan_task_writerate_etdetail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:lines="4"
+                android:textSize="20sp"
+                android:text=""
+                
+                android:textColor="#ff000000"
+                android:gravity="left|center"
+                android:paddingLeft="5dp"
+            />
+        
+    </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+    
+        
+        
+
+    
+
+</RelativeLayout>

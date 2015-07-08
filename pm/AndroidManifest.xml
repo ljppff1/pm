@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.suda.pm.ui"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    
+
+    <application
+        android:name="com.superdata.pm.common.SDApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/pm"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Black.NoTitleBar" >
+        <activity android:name="com.superdata.pm.activity.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.superdata.pm.activity.project.ProjectsActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.SettingsActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.homepage.HomepageActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.login.PwdSettingActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.UserinfoSettingActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.TabHostActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.project.plan.ProjectPlanPackageActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.cost.CostsActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.cost.expenses.CostExpensesActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.cost.expenses.CostExpensesDetailActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.cost.job.CostJobActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.cost.job.CostJobDetailActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.cost.material.CostMaterialActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.cost.material.CostMaterialDetailActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.cost.expenses.CostExpensesDetailMoreActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.cost.material.CostMaterialDetailMoreActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.cost.job.CostJobDetailMoreActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.ProjectCheckActiivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.project.report.ProjectProgressActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.document.DocumentsActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.homepage.bbs.BBSActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.homepage.bbs.BBSAddTitleActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.homepage.bbs.BBSModifyTitleActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.homepage.bbs.BBSDetailActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.homepage.news.CompanyNewsActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.homepage.news.CompanyNewMessageActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.homepage.news.CompanyNewsInboxActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.homepage.news.CompanyNewsInboxDetailActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.homepage.news.CompanyNewsInboxReplyActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.homepage.news.CompanyNewsOutBoxActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.homepage.news.CompanyNewsDraftsActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.document.doucumentmanager.DocumentsManagerActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.document.doucumentmanager.DocumentsManagerAddActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.document.doucumentmanager.DocumentsManagerDetailActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.document.doucumentmanager.DocumentsManagerChangeActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.document.projectdocument.ProjectDocumentsActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.ProjectManagerActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.project.manager.ProjectManagerCheckActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.project.manager.ProjectManagerCheckDetailActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.project.manager.ProjectDetailMemberActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.project.manager.ProjectDetailContractActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.project.report.CheckReportActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.project.manager.detail.comment.ProjectCommentActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.project.manager.detail.log.ProjectLogActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.project.manager.add.ProjectManagerAddProjectActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.project.manager.edit.ProjectManagerEditProjectActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.project.manager.edit.adjust.ProjectManagerAdjustCreaterActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.project.manager.edit.adjust.ProjectManagerAdjustCycleActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.project.manager.edit.adjust.ProjectManagerAdjustFundActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.project.report.FillProgressActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.project.member.ProjectMemberActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.project.plan.ProjectPlanCreateTask" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.project.manager.detail.member.ProjectAddMemberActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.project.report.CheckItemActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.project.contract.ProjectContractActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.project.contract.ProjectContractDetailActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.project.plan.ProjectPlanTaskActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.project.report.CheckProgressActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.homepage.bbs.BBSReplyActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.project.member.ProjectMemberDetailActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.project.report.CheckReportListActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.project.member.ProjectMemberProjectActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.homepage.news.CompanyNewsOutBoxDetailActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.homepage.news.ChooseReceiverActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.homepage.news.CompanyNewsDraftsDetailActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.document.projectdocument.ProjectDocumentDetailActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.project.plan.ProjectPlanProjectActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.cost.expenses.CostExpenseProjectActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.cost.job.CostJobProjectActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.cost.material.CostMaterialProjectActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.document.projectdocument.ProjectDownloadActivity" >
+        </activity>
+        <activity android:name="com.superdata.pm.activity.homepage.MyPhoneAppActivity">
+        </activity>
+        <activity android:name="com.superdata.pm.activity.homepage.news.CompanyNewsInboxListActivity">
+        </activity>
+        <activity android:name="com.superdata.pm.activity.homepage.news.CompanyNewsOutboxListActivity">
+        </activity>
+        <activity android:name="com.superdata.pm.activity.homepage.news.CompanyNewsDraftsListActivity">
+        </activity>
+        
+        
+        
+        <activity android:name="com.superdata.pm.activity.project.plan.ProjectPlanTaskDetailsActivity"></activity>
+        <activity android:name="com.superdata.pm.activity.project.manager.detail.plan.ProjectPlanTaskDetailsAuditActivity"></activity>
+        <activity android:name="com.superdata.pm.activity.project.plan.AuditBackRateActivity"></activity> 
+        <activity android:name="com.superdata.pm.activity.project.plan.AuditRateActivity"></activity>
+        <activity android:name="com.superdata.pm.activity.project.plan.WriteRateActivity"></activity>
+        
+        <provider 
+            android:name="com.superdata.pm.db.DownloadProvider" android:authorities="com.superdata.pm.DownloadProvider">
+        </provider>
+        
+        <receiver android:name="NetCheckReceiver">
+            <intent-filter >
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        
+        </application>
+
+</manifest>

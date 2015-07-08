@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_bbs_listitem"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/listviewbg"
+    android:paddingBottom="8dp"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    android:paddingTop="8dp" >
+    
+	<View
+        android:id="@+id/flag"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:tag="1" />
+	
+	<ImageView 
+	    android:id="@+id/iv_bbs_listitem_right"
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:scaleType="matrix"
+        android:src="@drawable/mm_submenu"
+	    />
+	
+	<LinearLayout 
+	    android:id="@+id/ll_bbs_listitem"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    >
+	
+	
+	<RelativeLayout 
+	    android:layout_width="290dp"
+	    android:layout_height="wrap_content"
+	    >
+	    
+	    <TextView 
+	        android:id="@+id/tv_bbs_listitem_title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="标题"
+	        android:textColor="@color/black"
+	        android:textSize="14sp"
+	        android:layout_marginLeft="14dp"
+	        android:lines="1"
+	        
+	        android:singleLine="true"
+	        android:maxLines="1"
+	        android:ellipsize="end"
+	        />
+	    
+	    
+	    <!-- <TextView 
+	        android:id="@+id/tv_bbs_listitem_relatedproject"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="相关项目"
+	        android:textColor="@color/black"
+	        android:textSize="16sp"
+	        android:layout_marginLeft="4dp"
+	        android:layout_toRightOf="@id/tv_bbs_listitem_title"
+	        /> -->
+	    
+	    <TextView 
+	        android:id="@+id/tv_bbs_listitem_content"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="内容             "
+	        android:paddingTop="8dp"
+	        android:layout_below="@id/tv_bbs_listitem_title"
+	        android:textColor="@color/grey"
+	        android:textSize="14sp"
+	        android:maxLines="2"
+	        android:ellipsize="end"
+	        android:layout_marginLeft="14dp"
+	        />
+	    
+	    
+	</RelativeLayout>
+	
+	
+	<RelativeLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingLeft="12dp"
+	    android:paddingRight="12dp"
+	    android:layout_marginTop="9dp"
+	    android:gravity="left"
+	    >
+	    
+	    <TextView 
+	        android:id="@+id/tv_bbs_listitem_author"
+	        android:layout_width="150dp"
+	        android:layout_height="wrap_content"
+	        android:text="发表人"
+	        android:textColor="@color/grey"
+	        android:textSize="10sp"
+	        
+	        />
+	    
+	    <TextView 
+	        android:id="@+id/tv_bbs_listitem_createtime"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="发表时间"
+	        android:textColor="@color/grey"
+	        android:textSize="10sp"
+	        android:layout_alignParentRight="true"
+	        />
+	    
+	    
+	</RelativeLayout>
+	
+	</LinearLayout>
+	
+	<TextView 
+	        android:id="@+id/tv_bbs_listitem_discussnumber"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="评论数"
+	        android:textColor="@color/grey"
+	        android:textSize="10sp"
+	        android:layout_marginRight="7dp"
+	        android:layout_alignParentRight="true"
+	        android:layout_below="@id/ll_bbs_listitem"
+	        android:paddingTop="11dp"
+	        />
+	    
+	    <ImageView 
+	        android:id="@+id/iv_bbs_listitem_commentscount"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toLeftOf="@id/tv_bbs_listitem_discussnumber"
+	        android:src="@drawable/ic_commentscount"
+	        android:layout_marginRight="5dp"
+	        android:paddingTop="5dp"
+	        android:layout_below="@id/ll_bbs_listitem"
+	        />
+    
+    
+</RelativeLayout>

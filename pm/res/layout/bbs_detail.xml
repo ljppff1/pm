@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 论坛详情 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e8e6e5" >
+    
+    <include layout="@layout/top_title"
+        android:id="@+id/include"/>
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/include"
+        >
+        
+        <RelativeLayout
+            android:id="@+id/rl_detail" 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            >
+            
+             <TextView 
+                 android:id="@+id/tv_bbs_detail_title"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:text=""
+                 android:textSize="16sp"
+                 android:textColor="@color/black"
+                 />
+           
+             <TextView 
+                android:id="@+id/tv_bbs_detail_relatedproject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_bbs_detail_title"
+                android:text=""
+                android:textSize="13sp"
+                android:textColor="@color/back"
+                android:layout_marginTop="2dp"
+                />
+             
+             <TextView 
+                android:id="@+id/tv_bbs_detail_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_bbs_detail_relatedproject"
+                android:text=""
+                android:textSize="12sp"
+                android:textColor="@color/darkgrey"
+                android:layout_marginTop="2dp"
+                android:layout_alignParentRight="true"
+                />
+             
+             <TextView 
+                android:id="@+id/tv_bbs_detail_createtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_bbs_detail_author"
+                android:layout_alignParentRight="true"
+                android:text=""
+                android:textSize="12sp"
+                android:textColor="@color/darkgrey"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="15dp"
+                />
+             
+             
+             
+             <TextView 
+                 android:id="@+id/tv_bbs_detail_content"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_below="@id/tv_bbs_detail_createtime"
+                 android:text=""
+                 android:textSize="16sp"
+                 android:textColor="@android:color/black"
+                 android:layout_marginTop="4dp"
+                 />
+           
+            
+        </RelativeLayout>
+        
+        
+        <RelativeLayout 
+            android:id="@+id/rl_detail_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            >
+             
+            <Button 
+                android:id="@+id/btn_detail_reply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/public_selector_bg"
+                android:text="回复"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+            
+            <EditText 
+            	android:id="@+id/et_detail_reply"
+            	android:layout_width="fill_parent"
+            	android:layout_height="35dp"
+            	android:layout_centerVertical="true"
+            	android:layout_toLeftOf="@id/btn_detail_reply"
+            	android:hint="我也说一句"
+            	android:inputType="text"
+            	android:textSize="12sp"
+            	android:layout_marginRight="6dp"
+            	/>
+            
+        </RelativeLayout>
+        
+        
+        <com.superdata.pm.view.XListView 
+            android:id="@+id/lv_bbs_detail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_detail"
+            android:layout_above="@id/rl_detail_reply"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3dp"
+            android:scrollingCache="false"
+            android:divider="@drawable/tip_line"
+            android:background="@color/white"
+            ></com.superdata.pm.view.XListView>
+        
+        
+    </RelativeLayout>
+    
+
+</RelativeLayout>

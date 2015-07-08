@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#e8e6e5"
+     >
+    
+    <!-- <RelativeLayout
+        android:id="@+id/costmat_de_more_rl_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/titlebar_bg_nor"
+        >
+        
+      
+       <ImageView
+            android:id="@+id/costmat_de_more_iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back" />
+        <TextView
+            style="@style/TextView.Middle.Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="材料开支详情单"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+     -->
+     
+     <include android:id="@+id/include"
+        layout="@layout/top_title" />
+    
+     <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            >
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal"
+        android:background="@drawable/preference_first_item"
+        >
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="材料名称："
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:id="@+id/cost_ex_de_more_tvname"
+            />
+        
+            <TextView
+                android:id="@+id/costmat_de_more_tv_value"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="40dp"
+                android:textSize="20sp"
+                android:textColor="#ff000000"
+                android:gravity="left|center"
+                android:paddingLeft="5dp">
+	            </TextView>
+              
+            
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal"
+        android:background="@drawable/preference_item"
+        >
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关联任务："
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            />
+        
+          <TextView
+                android:id="@+id/costmat_de_more_tv_task"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="40dp"
+                android:textSize="20sp"
+                android:textColor="#ff000000"
+                android:gravity="left|center"
+                android:paddingLeft="5dp">
+	            </TextView>
+              
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal"
+        android:background="@drawable/preference_item"
+        >
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="材料单价："
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            />
+          
+            <TextView
+                android:id="@+id/costmat_de_more_et_money"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="40dp"
+                android:textSize="20sp"
+                android:textColor="#ff000000"
+                android:gravity="left|center"
+                android:paddingLeft="5dp">
+	            </TextView>
+        
+    </LinearLayout>
+      <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal"
+        android:background="@drawable/preference_item"
+        >
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="材料数量："
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            />
+                    <TextView
+                android:id="@+id/costmat_de_more_et_count"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="40dp"
+                android:textSize="20sp"
+                android:textColor="#ff000000"
+                android:gravity="left|center"
+                android:paddingLeft="5dp">
+	            </TextView>
+        
+        
+    </LinearLayout>
+   
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal"
+        android:background="@drawable/preference_last_item"
+        >
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="领用说明："
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            />
+           <TextView
+                android:id="@+id/costmat_de_more_et_detail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="40dp"
+                android:textSize="20sp"
+                android:textColor="#ff000000"
+                android:gravity="left|center"
+                android:text="材料的描述 "
+                android:paddingLeft="5dp">
+	            </TextView>
+      
+        
+    </LinearLayout>
+    </LinearLayout>
+  </ScrollView>
+    
+ 
+    
+
+</LinearLayout>

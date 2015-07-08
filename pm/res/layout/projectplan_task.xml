@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 项目计划      任务-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e8e6e5"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top_title" />
+
+    
+    <com.superdata.pm.view.XListView 
+        android:id="@+id/lv_projectplan_task"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:divider="@drawable/tip_line"
+        android:scrollingCache="false"
+        ></com.superdata.pm.view.XListView>
+
+</LinearLayout>

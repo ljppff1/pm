@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e8e6e5"
+    android:orientation="vertical" >
+    
+    <include
+        android:id="@+id/include"
+        layout="@layout/top_title" />
+    
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/rl_detail_number"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/preference_first_item"
+                android:clickable="true"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tv_projectdocument_detail_docnames"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="附件名称："
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/tv_projectdocument_detail_docname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tv_projectdocument_detail_docnames"
+                    android:padding="8dp"
+                    android:text=""
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_detail_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_detail_number"
+                android:background="@drawable/preference_item"
+                android:clickable="true"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tv_projectdocument_detail_doctypes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="附件类型："
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/tv_projectdocument_detail_doctype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_projectdocument_detail_doctypes"
+                    android:padding="8dp"
+                    android:text=""
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_detail_category"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_detail_name"
+                android:background="@drawable/preference_item"
+                android:clickable="true"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tv_projectdocument_detail_docsizes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="附件大小："
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/tv_projectdocument_detail_docsize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tv_projectdocument_detail_docsizes"
+                    android:padding="8dp"
+                    android:text=""
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_detail_creater"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_detail_category"
+                android:background="@drawable/preference_item"
+                android:clickable="true"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tv_projectdocument_detail_docprojects"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="所属项目："
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/tv_projectdocument_detail_docproject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_projectdocument_detail_docprojects"
+                    android:padding="8dp"
+                    android:text=""
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_detail_createtime"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_detail_creater"
+                android:background="@drawable/preference_item"
+                android:clickable="true"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tv_projectdocument_detail_docmans"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="上  传  者："
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/tv_projectdocument_detail_docman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_projectdocument_detail_docmans"
+                    android:padding="8dp"
+                    android:text=""
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_detail_state"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_detail_createtime"
+                android:background="@drawable/preference_last_item"
+                android:clickable="true"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tv_projectdocument_detail_doctimes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="上传时间："
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/tv_projectdocument_detail_doctime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_projectdocument_detail_doctimes"
+                    android:padding="8dp"
+                    android:text=""
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+            
+            
+            
+            <RelativeLayout 
+                android:id="@+id/rl_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_detail_state"
+                android:gravity="center_vertical"
+                android:padding="8dp"
+                >
+                
+                <Button 
+                    android:id="@+id/btn_projectdocument_download"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="下载"
+                    android:textSize="15sp"
+                    android:background="@drawable/public_selector_bg"
+                    />
+                
+                <!-- <Button 
+                    android:id="@+id/btn_projectdocument_pause"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="暂停"
+                    android:textSize="15sp"
+                    android:background="@drawable/public_selector_bg"
+                    android:layout_toRightOf="@id/btn_projectdocument_download"
+                    android:layout_marginLeft="4dp"
+                    />
+                
+                <TextView
+        			android:id="@+id/result"
+        			android:textColor="@android:color/black"
+        			android:layout_width="wrap_content"
+        			android:layout_height="wrap_content"
+        			android:layout_alignParentRight="true"
+        			android:padding="2dp" />
+                
+                <ProgressBar 
+                	android:id="@+id/pb"
+                	android:layout_width="100dp"
+                	android:layout_height="wrap_content"
+                	style="@android:style/Widget.ProgressBar.Horizontal"
+               		android:layout_toRightOf="@id/btn_projectdocument_pause"
+               		android:layout_toLeftOf="@id/result"
+               		android:paddingLeft="4dp"
+                	/> -->
+            </RelativeLayout>
+            
+            <!-- <RelativeLayout 
+                android:id="@+id/rl_file"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_button"
+                android:gravity="center_vertical"
+                android:padding="8dp"
+                >
+                
+                <Button 
+                    android:id="@+id/btn__projectdocument_open"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="打开文件所在目录"
+                    android:textSize="12sp"
+                    android:background="@drawable/public_selector_bg"
+                    android:layout_alignParentRight="true"
+                    />
+                
+            </RelativeLayout> -->
+            
+            
+            
+        </RelativeLayout>
+        
+    </ScrollView>
+
+</LinearLayout>

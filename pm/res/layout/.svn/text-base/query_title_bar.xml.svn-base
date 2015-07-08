@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_vertical" >
+
+    <EditText
+        android:id="@+id/et_bbs_list_search"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+         android:background="@color/white"
+        android:focusable="true"
+        android:hint="关键字"
+        android:inputType="text"
+        android:paddingLeft="45dp"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <ImageButton
+        android:id="@+id/queryBtn"
+        android:layout_width="62dp"
+        android:layout_height="22dp"
+        android:layout_alignRight="@id/et_bbs_list_search"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@null"
+        android:contentDescription="@string/action_settings"
+        android:scaleType="fitCenter"
+        android:src="@drawable/search" />
+
+    <View
+        android:id="@+id/plant"
+        android:layout_width="1dp"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dp"
+        android:layout_toLeftOf="@id/queryBtn"
+        android:background="@color/darkgray"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/delBtn"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dp"
+        android:layout_toLeftOf="@id/plant"
+        android:background="@null"
+        android:contentDescription="@string/action_settings"
+        android:scaleType="fitCenter"
+        android:src="@drawable/close"
+        android:visibility="gone" />
+
+</RelativeLayout>

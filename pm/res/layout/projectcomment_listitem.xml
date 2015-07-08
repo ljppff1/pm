@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 查看项目  项目评论选项卡 listitem-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/listviewbg"
+    android:paddingBottom="8dp"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    android:paddingTop="8dp"
+     >
+    
+    <View
+        android:id="@+id/flag"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:tag="1" />
+    
+    <ImageView
+        android:id="@+id/iv_projectcomment_listitem_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:scaleType="matrix"
+        android:src="@drawable/mm_submenu" />
+    
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/iv_projectcomment_listitem_right"
+        android:layout_marginLeft="10dp"
+        >
+        
+        <TextView
+   		    android:id="@+id/tv_tab_projectcomment_themes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="主题："
+            android:textColor="@android:color/black"
+            android:paddingTop="2dp"
+            android:textSize="10sp" />
+        
+        <TextView
+            android:id="@+id/tv_tab_projectcomment_theme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="阿斯达西安上学啊阿萨德"
+            android:textColor="@color/blue_1"
+            android:layout_toRightOf="@id/tv_tab_projectcomment_themes"
+            android:paddingTop="2dp"
+            android:textSize="10sp" />
+        
+        
+        <TextView 
+            android:id="@+id/tv_tab_projectcomment_authors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发表人："
+            android:textColor="@android:color/black"
+            android:textSize="10sp" 
+            android:paddingTop="2dp"
+            android:layout_below="@id/tv_tab_projectcomment_theme"
+            />
+        
+        <TextView 
+            android:id="@+id/tv_tab_projectcomment_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="张三"
+            android:paddingTop="2dp"
+            android:textColor="@color/blue_3"
+            android:textSize="10sp"
+            android:layout_below="@id/tv_tab_projectcomment_theme"
+            android:layout_toRightOf="@+id/tv_tab_projectcomment_authors"
+            />
+        
+        <TextView
+            android:id="@+id/tv_tab_projectcomment_lastreporttimes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发表时间："
+            android:textColor="@android:color/black"
+            android:layout_below="@id/tv_tab_projectcomment_theme"
+            android:layout_toRightOf="@id/tv_tab_projectcomment_author"
+            android:paddingTop="2dp"
+            android:paddingLeft="15dp"
+            android:textSize="10sp" />   
+            
+        <TextView
+            android:id="@+id/tv_tab_projectcomment_lastreporttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2014-03-01 09:00"
+            android:textColor="@color/blue_3"
+            android:layout_below="@id/tv_tab_projectcomment_theme"
+            android:layout_toRightOf="@id/tv_tab_projectcomment_theme"
+            android:paddingTop="2dp"
+            android:textSize="10sp" />
+        
+        
+        <TextView 
+            android:id="@+id/tv_tab_projectcomment_lastreplytimes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最后回复时间："
+            android:textColor="@android:color/black"
+            android:textSize="10sp"
+            android:layout_below="@id/tv_tab_projectcomment_lastreporttime"
+            android:paddingTop="2dp"
+            />
+        
+        <TextView 
+            android:id="@+id/tv_tab_projectcomment_lastreplytime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2014-05-10 11:30"
+            android:textColor="@color/blue_3"
+            android:textSize="10sp"
+            android:layout_below="@id/tv_tab_projectcomment_lastreporttime"
+            android:paddingTop="2dp"
+            android:layout_toRightOf="@id/tv_tab_projectcomment_lastreplytimes"
+            android:paddingLeft="2dp"
+            />
+        
+        <TextView 
+            android:id="@+id/tv_tab_projectcomment_lastreplyers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最后回复人："
+            android:textColor="@android:color/black"
+            android:textSize="10sp"
+            android:layout_below="@id/tv_tab_projectcomment_lastreplytime"
+            android:paddingTop="2dp"
+            />
+        
+        <TextView 
+            android:id="@+id/tv_tab_projectcomment_lastreplyer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="王微微"
+            android:textColor="@color/blue_3"
+            android:textSize="10sp"
+            android:layout_below="@id/tv_tab_projectcomment_lastreplytime"
+            android:paddingTop="2dp"
+            android:layout_toRightOf="@id/tv_tab_projectcomment_lastreplyers"
+            android:paddingLeft="2dp"
+            />
+        
+        
+        
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/sdmain" >
+    
+    <include layout="@layout/top_title" />
+    
+    <!-- <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:background="@drawable/list_main"
+        >
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            >
+            
+            <Button 
+            	android:layout_width="0dp"
+            	android:layout_height="36dp"
+            	android:layout_weight="1"
+            	android:text="新消息"
+            	android:onClick="newMessage"
+            	android:textSize="14sp"
+            	/>
+        
+        	<Button 
+            	android:layout_width="0dp"
+            	android:layout_height="36dp"
+            	android:layout_weight="1"
+            	android:text="收件箱"
+            	android:onClick="inbox"
+            	android:textSize="14sp"
+            	/>
+        
+        	<Button 
+            	android:layout_width="0dp"
+            	android:layout_height="36dp"
+            	android:layout_weight="1"
+            	android:text="发件箱"
+            	android:onClick="outbox"
+            	android:textSize="14sp"
+            	/>
+        	
+        	<Button 
+            	android:layout_width="0dp"
+            	android:layout_height="36dp"
+            	android:layout_weight="1"
+            	android:text="草稿箱"
+            	android:onClick="drafts"
+            	android:textSize="14sp"
+            	/>
+            
+        </LinearLayout>
+        
+    </LinearLayout> -->
+    
+    <GridView 
+        android:id="@+id/gv_news"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="40dp"
+        android:numColumns="2"
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="#0879d6"
+        android:horizontalSpacing="5dp"
+        android:verticalSpacing="60dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
+        ></GridView>
+    
+
+</LinearLayout>

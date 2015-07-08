@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_outbox_listitem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/listviewbg"
+    android:paddingBottom="8dp"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    android:paddingTop="8dp" >
+    
+	<View
+        android:id="@+id/flag"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:tag="1" />
+	
+	<ImageView 
+	    android:id="@+id/iv_outbox_listitem_right"
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:scaleType="matrix"
+        android:src="@drawable/mm_submenu"
+	    />
+	
+	
+	<RelativeLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_toLeftOf="@id/iv_outbox_listitem_right"
+	    >
+	    
+	    <CheckBox 
+	        android:id="@+id/cb_outbox_listitem"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:focusable="false"
+	        android:button="@drawable/checkbox_checked_style"
+	        android:layout_centerVertical="true"
+	        android:paddingLeft="2dp"
+	        />
+	    
+	    
+	    <TextView 
+	        android:id="@+id/tv_outbox_listitem_receiver"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="接收者"
+	        android:textColor="@android:color/black"
+	        android:textSize="12sp"
+	        android:layout_toRightOf="@id/cb_outbox_listitem"
+	        android:maxLines="1"
+	        android:singleLine="true"
+	        android:ellipsize="end"
+	        />
+	    
+	    <TextView 
+	        android:id="@+id/tv_outbox_listitem_title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="标题             "
+	        android:paddingTop="2dp"
+	        android:layout_below="@id/tv_outbox_listitem_receiver"
+	        android:textColor="@android:color/black"
+	        android:textSize="10sp"
+	        android:maxLines="1"
+	        android:layout_toRightOf="@id/cb_outbox_listitem"
+	        android:singleLine="true"
+	        android:ellipsize="end"
+	        />
+	    
+	    <TextView 
+	        android:id="@+id/tv_outbox_listview_content"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="content"
+	        android:paddingTop="2dp"
+	        android:layout_below="@id/tv_outbox_listitem_title"
+	        android:textColor="@android:color/black"
+	        android:textSize="10sp"
+	        android:maxLines="1"
+	        android:layout_toRightOf="@id/cb_outbox_listitem"
+	        android:singleLine="true"
+	        android:ellipsize="end"
+	        />
+	    
+	    <TextView 
+	        android:id="@+id/tv_outbox_listitem_sendtime"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/tv_outbox_listview_content"
+	        android:text="2014-07-01 15:20"
+	        android:textColor="@android:color/black"
+	        android:textSize="8sp"
+	        android:layout_marginRight="10dp"
+	        android:layout_alignParentRight="true"
+	        />
+	    
+	</RelativeLayout>
+    
+    
+</RelativeLayout>

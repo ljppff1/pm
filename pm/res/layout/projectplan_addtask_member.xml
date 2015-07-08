@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/listviewbg"
+    android:paddingBottom="8dp"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    android:paddingTop="8dp"
+     >
+    
+    <View
+        android:id="@+id/flag"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:tag="1" />
+    
+    <Button
+        android:id="@+id/btn_addtask_member_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bt_selector_bg"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="删除"
+        android:textSize="10sp"
+        android:scaleType="matrix"
+        android:src="@drawable/mm_submenu" />
+    
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/btn_addtask_member_delete"
+        android:layout_marginLeft="10dp"
+        >
+        
+        <TextView
+   		    android:id="@+id/tv_addtask_member_membernumbers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="成员编号："
+            android:textColor="@android:color/black"
+            android:paddingTop="1dp"
+            android:textSize="10sp" />
+        
+        <TextView
+            android:id="@+id/tv_addtask_member_membernumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="000001"
+            android:textColor="@color/blue_1"
+            android:layout_toRightOf="@id/tv_addtask_member_membernumbers"
+            android:paddingTop="1dp"
+            android:textSize="10sp" />
+        
+        <TextView
+            android:id="@+id/tv_addtask_member_membernames"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="成员姓名："
+            android:textColor="@android:color/black"
+            android:layout_toRightOf="@id/tv_addtask_member_membernumber"
+            android:paddingTop="1dp"
+            android:paddingLeft="15dp"
+            android:textSize="10sp" />   
+        <TextView
+            android:id="@+id/tv_addtask_member_membername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="张三"
+            android:textColor="@color/blue_3"
+            android:paddingLeft="2dp"
+            android:layout_toRightOf="@id/tv_addtask_member_membernames"
+            android:paddingTop="1dp"
+            android:textSize="10sp" />
+        
+        <TextView 
+            android:id="@+id/tv_addtask_member_departments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="所属部门："
+            android:textColor="@android:color/black"
+            android:textSize="10sp" 
+            android:paddingTop="1dp"
+            android:layout_below="@id/tv_addtask_member_membernames"
+            />
+        
+        <TextView 
+            android:id="@+id/tv_addtask_member_department"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="研发部"
+            android:paddingTop="1dp"
+            android:textColor="@color/blue_2"
+            android:textSize="10sp"
+            android:layout_below="@id/tv_addtask_member_membernames"
+            android:layout_toRightOf="@+id/tv_addtask_member_departments"
+            />
+        
+        <TextView
+            android:id="@+id/tv_addtask_member_memberpositions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="成员职位："
+            android:textColor="@android:color/black"
+            android:layout_below="@id/tv_addtask_member_membernames"
+            android:layout_toRightOf="@id/tv_addtask_member_department"
+            android:paddingTop="1dp"
+            android:paddingLeft="15dp"
+            android:textSize="10sp" />   
+            
+        <TextView
+            android:id="@+id/tv_addtask_member_memberposition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开发人员"
+            android:textColor="@color/blue_3"
+            android:layout_below="@id/tv_addtask_member_membernames"
+            android:layout_toRightOf="@id/tv_addtask_member_memberpositions"
+            android:paddingTop="1dp"
+            android:textSize="10sp" />
+        
+    </RelativeLayout>
+
+</RelativeLayout>

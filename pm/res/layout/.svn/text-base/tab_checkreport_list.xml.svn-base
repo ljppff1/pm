@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 查看项目  验收报告选项卡 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e8e6e5"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/top_title" />
+    
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="18dp"
+        >
+        
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="验收项"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            />
+        
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="验收结果"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            />
+        
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="备注"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            />
+        
+    </LinearLayout>
+    
+    <com.superdata.pm.view.XListView 
+        android:id="@+id/lv_tab_checkreport_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:divider="@drawable/tip_line"
+        android:scrollingCache="false"
+        ></com.superdata.pm.view.XListView>
+    
+    
+    
+    
+
+</LinearLayout>

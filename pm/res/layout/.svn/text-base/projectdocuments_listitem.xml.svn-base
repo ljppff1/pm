@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/projectdocuments_listitem"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/listviewbg"
+    android:paddingBottom="8dp"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    android:paddingTop="8dp"
+     >
+     
+    <View
+        android:id="@+id/flag"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:tag="1" />
+    
+    <ImageView 
+        android:id="@+id/iv_projectdocuments_listitem_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:scaleType="matrix"
+        android:src="@drawable/mm_submenu" 
+        />
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/iv_projectdocuments_listitem_right"
+        >
+        
+        <!-- <CheckBox 
+            android:id="@+id/cb_projectdocuments_listitem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/MyCheckBox"
+            /> -->
+        
+       <!--  <Button 
+            android:id="@+id/btn_projectdocuments_listitem_download"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="下载"
+            android:textSize="10sp"
+            android:layout_centerVertical="true"
+            /> -->
+       
+        
+        <TextView
+            android:id="@+id/tv_projectdocuments_listitem_names"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="附件名称："
+            android:textColor="@android:color/black"
+            android:paddingLeft="6dp"
+            android:textSize="10sp" />   
+            
+        <TextView
+            android:id="@+id/tv_projectdocuments_listitem_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="施工图纸附件.jpg"
+            android:textColor="@color/blue_3"
+            android:paddingLeft="2dp"
+            android:layout_toRightOf="@id/tv_projectdocuments_listitem_names"
+            android:textSize="10sp" />
+        
+        <TextView
+            android:id="@+id/tv_projectdocuments_listitem_types"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="附件类型："
+            android:paddingTop="1dp"
+            android:layout_below="@id/tv_projectdocuments_listitem_name"
+            android:textColor="@android:color/black"
+            android:paddingLeft="6dp"
+            android:textSize="10sp" />
+                      
+        <TextView
+            android:id="@+id/tv_projectdocuments_listitem_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="图纸附件"
+            android:paddingTop="1dp"
+            android:layout_below="@id/tv_projectdocuments_listitem_name"
+            android:layout_toRightOf="@id/tv_projectdocuments_listitem_types"
+            android:textColor="@color/blue_2"
+            android:textSize="10sp" />
+        
+        <TextView 
+            android:id="@+id/tv_projectdocuments_listitem_sizes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="附件大小："
+            android:paddingTop="1dp"
+            android:layout_below="@id/tv_projectdocuments_listitem_name"
+            android:layout_toRightOf="@id/tv_projectdocuments_listitem_type"
+            android:textColor="@android:color/black"
+            android:paddingLeft="15dp"
+            android:textSize="10sp"
+            />
+        
+        <TextView
+            android:id="@+id/tv_projectdocuments_listitem_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="102kb"
+            android:paddingTop="1dp"
+            android:layout_below="@id/tv_projectdocuments_listitem_name"
+            android:layout_toRightOf="@id/tv_projectdocuments_listitem_sizes"
+            android:textColor="@color/blue_2"
+            android:textSize="10sp" />
+        
+        <TextView
+            android:id="@+id/tv_projectdocuments_listitem_projects"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="所属项目："
+            android:paddingTop="1dp"
+            android:layout_below="@id/tv_projectdocuments_listitem_types"
+            android:textColor="@android:color/black"
+            android:textSize="10sp"
+            android:paddingLeft="6dp"
+             />
+        
+        <TextView
+            android:id="@+id/tv_projectdocuments_listitem_project"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="施工项目"
+            android:paddingTop="1dp"
+            android:layout_below="@id/tv_projectdocuments_listitem_types"
+            android:layout_toRightOf="@id/tv_projectdocuments_listitem_projects"
+            android:textColor="@color/blue_2"
+            android:textSize="10sp" /> 
+            
+        
+        
+        <TextView
+            android:id="@+id/tv_projectdocuments_listitem_uploadtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="2014/6/30 11:00"
+            android:textColor="@color/blue"
+            android:layout_below="@id/tv_projectdocuments_listitem_projects"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:textSize="8sp" />
+        
+        <TextView
+            android:id="@+id/tv_projectdocuments_listitem_uploadtimes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上传时间:"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/tv_projectdocuments_listitem_projects"
+            android:layout_toLeftOf="@id/tv_projectdocuments_listitem_uploadtime"
+            android:layout_alignParentBottom="true"
+            android:textSize="8sp" />
+        
+          
+        <TextView
+            android:id="@+id/tv_projectdocuments_listitem_uploader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="李总"
+            android:textColor="@color/blue"
+            android:layout_below="@id/tv_projectdocuments_listitem_projects"
+            android:layout_toLeftOf="@id/tv_projectdocuments_listitem_uploadtimes"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="10dp"
+            android:textSize="8sp" />
+        
+        <TextView
+            android:id="@+id/tv_projectdocuments_listitem_creaters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上传者："
+            android:textColor="@android:color/black"
+            android:layout_below="@id/tv_projectdocuments_listitem_projects"
+            android:layout_toLeftOf="@id/tv_projectdocuments_listitem_uploader"
+            android:layout_alignParentBottom="true"
+            android:textSize="8sp" />
+        
+    </RelativeLayout>
+    
+
+</RelativeLayout>

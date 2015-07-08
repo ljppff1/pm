@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 论坛回帖 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sdmain"
+    >
+    
+    <include layout="@layout/top_title"
+        android:id="@+id/include"
+        />
+    
+    <Button 
+        android:id="@+id/btn_bbs_reply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="回复"
+        android:textSize="14sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/bt_selector_bg"
+        />
+    
+    
+    <EditText 
+        android:id="@+id/et_bbs_reply_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_above="@id/btn_bbs_reply"
+        android:layout_below="@id/include"
+        android:hint="请输入回复内容"
+        />
+    
+    
+
+</RelativeLayout>

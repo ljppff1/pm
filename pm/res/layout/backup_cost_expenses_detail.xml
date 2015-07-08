@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4c9fc1" >
+
+    <RelativeLayout
+        android:id="@+id/costex_de_rl_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/titlebar_bg_nor"
+        >
+        
+      <ImageView
+            android:id="@+id/costex_de_iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back" />
+      
+        <TextView
+            style="@style/TextView.Middle.Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="费用明细"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <ScrollView 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/costex_de_rl_top"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            >
+        
+      <RelativeLayout 
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          
+          >
+            <RelativeLayout
+            android:id="@+id/costex_de_rl_humannumber"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/preference_first_item"
+            android:clickable="true"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/costex_de_item_tv_humannumber1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="费用单号："
+                android:textColor="#000"
+                android:textSize="17sp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:scaleType="matrix"
+                android:src="@drawable/mm_submenu" />
+
+            <TextView
+                android:id="@+id/costex_de_item_tv_humannumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/costex_de_item_tv_humannumber1"
+                android:padding="8dp"
+                android:text="HR0001"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+          </RelativeLayout>
+            
+        <RelativeLayout
+            android:id="@+id/costex_de_rl_money"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/preference_item"
+            android:clickable="true"
+            android:gravity="center_vertical" 
+            android:layout_below="@id/costex_de_rl_humannumber">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:id="@+id/costex_de_item_tv_money1"
+                android:text="总金额："
+                android:textColor="#000"
+                android:textSize="17sp" />
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                   android:id="@+id/costex_de_item_tv_money"
+                   android:layout_toRightOf="@id/costex_de_item_tv_money1"
+                android:text="1000000"
+                android:layout_centerVertical="true"
+                android:textColor="#000"
+                android:textSize="14sp" />
+          
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="matrix"
+                android:src="@drawable/mm_submenu" />
+        </RelativeLayout>
+     
+        
+    
+    
+           <RelativeLayout
+            android:id="@+id/costex_de_rl_projectby"
+            android:layout_below="@id/costex_de_rl_money"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/preference_item"
+            android:clickable="true"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="所属项目："
+                android:id="@+id/costex_de_item_tv_projectby1"
+                android:textColor="#000"
+                android:textSize="17sp" />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="项目一"
+                android:layout_centerVertical="true"
+                android:id="@+id/costex_de_item_tv_projectby"
+                android:layout_toRightOf="@+id/costex_de_item_tv_projectby1"
+                android:textColor="#000"
+                android:textSize="14sp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="matrix"
+                android:src="@drawable/mm_submenu" />
+        </RelativeLayout>
+        
+           
+           
+
+         <RelativeLayout
+            android:id="@+id/costex_de_rl_isverify"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/costex_de_rl_projectby"
+            android:background="@drawable/preference_item"
+            android:clickable="true"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:id="@+id/costex_de_item_tv_isverify1"
+                android:text="审核状态："
+                android:textColor="#000"
+                android:textSize="17sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:id="@+id/costex_de_item_tv_isverify"
+                android:text="未审核"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/costex_de_item_tv_isverify1"
+                android:textColor="#000"
+                android:textSize="14sp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="matrix"
+                android:src="@drawable/mm_submenu" />
+        </RelativeLayout>
+                 <RelativeLayout
+            android:id="@+id/costex_de_rl_auditor"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/costex_de_rl_isverify"
+            android:background="@drawable/preference_item"
+            android:clickable="true"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:id="@+id/costex_de_item_tv_auditor1"
+                android:text="审核人："
+                android:textColor="#000"
+                android:textSize="17sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:id="@+id/costex_de_item_tv_auditor"
+                android:text="李总"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/costex_de_item_tv_auditor1"
+                android:textColor="#000"
+                android:textSize="14sp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="matrix"
+                android:src="@drawable/mm_submenu" />
+        </RelativeLayout>
+              <RelativeLayout
+            android:id="@+id/costex_de_rl_pay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/costex_de_rl_auditor"
+            android:background="@drawable/preference_item"
+            android:clickable="true"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:id="@+id/costex_de_item_tv_pay1"
+                android:text="费用描述："
+                android:textColor="#000"
+                android:textSize="17sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:id="@+id/costex_de_item_tv_pay"
+                android:text="打车费用，有多少字显示多少字打车费用，有多少字显示多少字
+                打车费用，有多少字显示多少字打车费用，有多少字显示多少字打车费用，有多少字显示多少字打车费用，有多少字显示多少字打车费用，有多少字显示多少字打车费用，有多少字显示多少字打车费用，有多少字显示多少字打车费用，有多少字显示多少字打车费用，有多少字显示多少字打车费用，有多少字显示多少字打车费用，有多少字显示多少字打车费用，有多少字显示多少字打车费用，有多少字显示多少字打车费用，有多少字显示多少字打车费用，有多少字显示多少字打车费用，有多少字显示多少字打车费用，有多少字显示多少字打车费用，有多少字显示多少字打车费用，有多少字显示多少字打车费用，有多少字显示多少字打车费用，有多少字显示多少字打车费用，有多少字显示多少字"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/costex_de_item_tv_pay1"
+                android:textColor="#000"
+                android:textSize="10sp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="matrix"
+                android:src="@drawable/mm_submenu" />
+        </RelativeLayout>
+        
+              
+              
+         
+
+        <RelativeLayout
+            android:id="@+id/costex_de_rl_data"
+            android:layout_below="@id/costex_de_rl_pay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/preference_last_item"
+            android:clickable="true"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                                android:id="@+id/costex_de_item_tv_pay1"
+                
+                android:text="费用日期："
+                android:textColor="#000"
+                android:textSize="17sp" />
+             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/costex_de_item_tv_pay1"
+                android:padding="8dp"
+                android:id="@+id/costex_de_item_tv_pay"
+                android:text="2014/8/24"
+                android:textColor="#000"
+                android:textSize="14sp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="matrix"
+                android:src="@drawable/mm_submenu" />
+            
+        </RelativeLayout>
+  
+        
+</RelativeLayout>
+        
+        </ScrollView>
+        
+        
+        
+                
+   
+
+
+</RelativeLayout>

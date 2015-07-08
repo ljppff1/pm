@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 项目日志 listitem  -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/listviewbg"
+    android:paddingBottom="8dp"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    android:paddingTop="8dp"
+     >
+    
+    <View
+        android:id="@+id/flag"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:tag="1" />
+    
+    <ImageView
+        android:id="@+id/iv_projectlog_listitem_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:scaleType="matrix"
+        android:src="@drawable/mm_submenu" />
+    
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/iv_projectlog_listitem_right"
+        android:layout_marginLeft="10dp"
+        >
+        
+        <TextView
+   		    android:id="@+id/tv_tab_projectlog_operaters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="创建人："
+            android:textColor="@android:color/black"
+            android:paddingTop="1dp"
+            android:layout_marginLeft="9dp"
+            android:textSize="10sp" />
+        
+        <TextView
+            android:id="@+id/tv_tab_projectlog_operater"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="李四"
+            android:textColor="@color/blue_1"
+            android:layout_toRightOf="@id/tv_tab_projectlog_operaters"
+            android:paddingTop="1dp"
+            android:textSize="10sp" />
+        
+        <TextView
+            android:id="@+id/tv_tab_projectlog_operatetimes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="创建时间："
+            android:textColor="@android:color/black"
+            android:layout_toRightOf="@id/tv_tab_projectlog_operater"
+            android:paddingTop="1dp"
+            android:paddingLeft="15dp"
+            android:textSize="10sp" 
+            />   
+            
+        <TextView
+            android:id="@+id/tv_tab_projectlog_operatetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2014-04-10 11:21"
+            android:textColor="@color/blue_3"
+            android:paddingLeft="2dp"
+            android:layout_toRightOf="@id/tv_tab_projectlog_operatetimes"
+            android:paddingTop="1dp"
+            android:textSize="10sp" 
+            />
+        
+        <TextView 
+            android:id="@+id/tv_tab_projectlog_opTypes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="操作类型："
+            android:textColor="@android:color/black"
+            android:textSize="10sp" 
+            android:paddingTop="1dp"
+            android:layout_below="@id/tv_tab_projectlog_operatetime"
+            />
+        
+        <TextView 
+            android:id="@+id/tv_tab_projectlog_opType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="调整项目预算"
+            android:paddingTop="1dp"
+            android:textColor="@color/blue_3"
+            android:textSize="10sp"
+            android:layout_below="@id/tv_tab_projectlog_operatetime"
+            android:layout_toRightOf="@+id/tv_tab_projectlog_operatecontents"
+            />
+        
+        
+        <TextView 
+            android:id="@+id/tv_tab_projectlog_operatecontents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="操作说明："
+            android:textColor="@android:color/black"
+            android:textSize="10sp" 
+            android:paddingTop="1dp"
+            android:layout_below="@id/tv_tab_projectlog_opType"
+            />
+        
+        <TextView 
+            android:id="@+id/tv_tab_projectlog_operatecontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="创建项目【项目管理系统】"
+            android:paddingTop="1dp"
+            android:textColor="@color/blue_3"
+            android:textSize="10sp"
+            android:layout_below="@id/tv_tab_projectlog_opType"
+            android:layout_toRightOf="@+id/tv_tab_projectlog_operatecontents"
+            />
+        
+        
+    </RelativeLayout>
+
+</RelativeLayout>

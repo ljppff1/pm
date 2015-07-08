@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#e8e6e5" >
+    
+    <include layout="@layout/top_title"/>
+    
+    <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+         android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        >
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        
+        <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        
+        	<TextView 
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:text="主题:"
+            	android:textSize="16sp"
+            	android:textColor="@color/black"
+            	/>
+        
+        	<EditText 
+        	    android:id="@+id/et_bbs_addtitle_title"
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:layout_marginRight="5dp"
+            	/>
+        
+    	</LinearLayout>
+    	
+        <!-- <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="项目:"
+            	android:textSize="16sp"
+                />
+            
+            <EditText 
+                android:id="@+id/et_bbs_addtitle_project"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                />
+            
+        </LinearLayout> -->
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="内容:"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            />
+        
+        <EditText 
+            android:id="@+id/et_bbs_addtitle_content"
+            android:layout_width="fill_parent"
+            android:layout_height="260dp"
+            android:layout_marginLeft="37dp"
+            android:layout_marginRight="5dp"
+            android:hint="请输入内容"
+            />
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="30dp"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            >
+            
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+                
+               <Button 
+                android:id="@+id/btn_bbs_addtitle_publish"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:text="发表"
+                android:textSize="14sp"
+                android:background="@drawable/public_selector_bg"
+                />
+            
+            	
+            
+            	<Button
+            	android:id="@+id/btn_bbs_addtitle_cancel" 
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                android:text="取消"
+                android:textSize="14sp"
+                android:background="@drawable/public_selector_bg"
+                />
+                
+            </LinearLayout>
+            
+            
+        </LinearLayout>
+        
+        
+    </LinearLayout>
+    
+    </ScrollView>
+    
+
+</LinearLayout>

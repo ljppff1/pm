@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e8e6e5"
+    android:orientation="vertical" >
+    
+    
+    <include
+        android:id="@+id/include"
+        layout="@layout/top_title" />
+    
+    
+    
+    <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        >
+        
+        <RelativeLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+            
+            <RelativeLayout 
+                android:id="@+id/rl_memberdetail_project"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/preference_first_item"
+                android:clickable="true"
+                android:gravity="center_vertical" 
+                >
+                
+                <TextView
+                    android:id="@+id/tv_memberdetail_projectnames"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="34dp"
+                    android:padding="8dp"
+                    android:text="项目名称："
+                    android:textColor="#000"
+                    android:textSize="17sp" 
+                    />
+
+                <TextView
+                    android:id="@+id/tv_memberdetail_projectname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tv_memberdetail_projectnames"
+                    android:padding="8dp"
+                    android:text=""
+                    android:textColor="#000"
+                    android:textSize="15sp" 
+                    />
+                
+            </RelativeLayout>
+            
+            
+            <RelativeLayout
+                android:id="@+id/rl_memberdetail_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_memberdetail_project"
+                android:background="@drawable/preference_item"
+                android:clickable="true"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tv_memberdetail_membernames"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="34dp"
+                    android:padding="8dp"
+                    android:text="成员姓名："
+                    android:textColor="#000"
+                    android:textSize="17sp" 
+                    />
+
+                <TextView
+                    android:id="@+id/tv_tv_memberdetail_membername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_memberdetail_membernames"
+                    android:padding="8dp"
+                    android:text=""
+                    android:textColor="#000"
+                    android:textSize="15sp" 
+                    />
+                
+            </RelativeLayout>
+            
+            
+            <RelativeLayout
+                android:id="@+id/rl_memberdetail_position"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_memberdetail_name"
+                android:background="@drawable/preference_item"
+                android:clickable="true"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tv_memberdetail_memberpositions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="34dp"
+                    android:padding="8dp"
+                    android:text="成员职位："
+                    android:textColor="#000"
+                    android:textSize="17sp" 
+                    />
+
+                <TextView
+                    android:id="@+id/tv_memberdetail_memberposition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_memberdetail_memberpositions"
+                    android:padding="8dp"
+                    android:text=""
+                    android:textColor="#000"
+                    android:textSize="15sp" 
+                    />
+                
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/rl_memberdetail_creator"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_memberdetail_position"
+                android:background="@drawable/preference_item"
+                android:clickable="true"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tv_memberdetail_creators"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="是否为立项人："
+                    android:textColor="#000"
+                    android:textSize="17sp" 
+                    />
+
+                <TextView
+                    android:id="@+id/tv_memberdetail_creator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_memberdetail_creators"
+                    android:padding="8dp"
+                    android:text=""
+                    android:textColor="#000"
+                    android:textSize="15sp" 
+                    />
+                
+            </RelativeLayout>
+            
+            
+            <RelativeLayout
+                android:id="@+id/rl_memberdetail_state"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_memberdetail_creator"
+                android:background="@drawable/preference_item"
+                android:clickable="true"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tv_memberdetail_states"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:padding="8dp"
+                    android:text="是否参与："
+                    android:textColor="#000"
+                    android:textSize="17sp" 
+                    />
+
+                <TextView
+                    android:id="@+id/tv_memberdetail_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_memberdetail_states"
+                    android:padding="8dp"
+                    android:text=""
+                    android:textColor="#000"
+                    android:textSize="15sp" 
+                    />
+                
+            </RelativeLayout>
+            
+            
+            <RelativeLayout
+                android:id="@+id/rl_memberdetail_remark"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_memberdetail_state"
+                android:background="@drawable/preference_last_item"
+                android:clickable="true"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tv_memberdetail_remarks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="71dp"
+                    android:padding="8dp"
+                    android:text="备注："
+                    android:textColor="#000"
+                    android:textSize="17sp" 
+                    />
+
+                <TextView
+                    android:id="@+id/tv_memberdetail_remark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_memberdetail_remarks"
+                    android:padding="8dp"
+                    android:text=""
+                    android:textColor="#000"
+                    android:textSize="15sp" 
+                    />
+                
+            </RelativeLayout>
+            
+            
+        </RelativeLayout>
+        
+        
+    </ScrollView>
+    
+
+</LinearLayout>

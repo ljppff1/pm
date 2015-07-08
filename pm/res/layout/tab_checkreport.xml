@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 查看项目  验收报告 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#e8e6e5"
+    android:layout_height="match_parent" >
+    
+    <include android:id="@+id/include"
+        layout="@layout/top_title" />
+    
+    
+    <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/include"
+        android:paddingBottom="8dp"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp"
+    android:paddingTop="8dp"
+    android:layout_marginTop="10dp"
+        >
+    
+    <RelativeLayout 
+         android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    
+        >
+    
+    <View
+        android:id="@+id/flag"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:tag="1" />
+    
+    
+    <ImageView 
+        android:id="@+id/iv_projectplan_package_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:scaleType="matrix"
+        android:src="@drawable/mm_submenu" 
+        />
+    
+    
+    
+    
+    <RelativeLayout 
+        android:id="@+id/rl_report_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/iv_projectplan_package_right"
+        >
+        
+        <TextView 
+            android:id="@+id/tv_tab_checkreport_reportnumbers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="验收报告编号："
+            android:textColor="@android:color/black"
+            android:paddingTop="8dp"
+            android:textSize="14sp"
+            />
+        
+        <TextView
+            android:id="@+id/tv_tab_checkreport_reportnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/blue_2"
+            android:layout_toRightOf="@id/tv_tab_checkreport_reportnumbers"
+            android:paddingTop="8dp"
+            android:textSize="14sp" />
+        
+        <TextView
+            android:id="@+id/tv_tab_checkreport_projects"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:text="验收项目："
+            android:textColor="@android:color/black"
+            android:layout_below="@id/tv_tab_checkreport_reportnumber"
+            android:paddingTop="8dp"
+            android:textSize="14sp" />   
+            
+        <TextView
+            android:id="@+id/tv_tab_checkreport_project"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/blue_2"
+            android:paddingLeft="2dp"
+            android:layout_below="@id/tv_tab_checkreport_reportnumber"
+            android:layout_toRightOf="@id/tv_tab_checkreport_projects"
+            android:paddingTop="8dp"
+            android:textSize="14sp" />
+        
+        <TextView 
+            android:id="@+id/tv_tab_checkreport_reportnames"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="验收报告名称："
+            android:textColor="@android:color/black"
+            android:textSize="14sp" 
+            android:paddingTop="8dp"
+            android:layout_below="@id/tv_tab_checkreport_project"
+            />
+        
+        <TextView 
+            android:id="@+id/tv_tab_checkreport_reportname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:paddingTop="8dp"
+            android:textColor="@color/blue_2"
+            android:textSize="14sp"
+            android:layout_below="@id/tv_tab_checkreport_project"
+            android:layout_toRightOf="@+id/tv_tab_checkreport_reportnames"
+            />
+        
+        <TextView 
+            android:id="@+id/tv_tab_checkreport_checktimes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="29dp"
+            android:text="验收日期："
+            android:textColor="@android:color/black"
+            android:textSize="14sp" 
+            android:paddingTop="8dp"
+            android:layout_below="@id/tv_tab_checkreport_reportname"
+            />
+        
+        <TextView 
+            android:id="@+id/tv_tab_checkreport_checktime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_tab_checkreport_checktimes"
+            android:text=""
+            android:paddingTop="8dp"
+            android:textColor="@color/blue_2"
+            android:textSize="14sp"
+            android:layout_below="@id/tv_tab_checkreport_reportname"
+            />
+        
+    	<TextView 
+    	    android:id="@+id/tv_tab_checkreport_headers"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_marginLeft="15dp"
+    	    android:text="验收负责人："
+            android:textColor="@android:color/black"
+            android:textSize="14sp" 
+            android:paddingTop="8dp"
+            android:layout_below="@id/tv_tab_checkreport_checktime"
+    	    />
+    	
+    	<TextView 
+    	    android:id="@+id/tv_tab_checkreport_header"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:text=""
+            android:paddingTop="8dp"
+            android:textColor="@color/blue_2"
+            android:textSize="14sp"
+            android:layout_below="@id/tv_tab_checkreport_checktime"
+            android:layout_toRightOf="@id/tv_tab_checkreport_headers"
+    	    />
+    	
+    	<TextView 
+    	    android:id="@+id/tv_tab_checkreport_projectstartdatas"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_marginLeft="1dp"
+    	    android:text="项目开始日期："
+            android:textColor="@android:color/black"
+            android:textSize="14sp" 
+            android:paddingTop="8dp"
+            android:layout_below="@id/tv_tab_checkreport_header"
+    	    />
+    	
+    	<TextView 
+    	    android:id="@+id/tv_tab_checkreport_projectstartdata"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:text=""
+    	    android:paddingTop="8dp"
+            android:textColor="@color/blue_2"
+            android:textSize="14sp"
+            android:layout_toRightOf="@id/tv_tab_checkreport_projectstartdatas"
+    	    android:layout_below="@id/tv_tab_checkreport_header"
+    	    />
+    	
+    	<TextView 
+    	    android:id="@+id/tv_tab_checkreport_projectenddatas"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_marginLeft="1dp"
+    	    android:text="项目结束日期："
+            android:textColor="@android:color/black"
+            android:textSize="14sp" 
+            android:paddingTop="8dp"
+            android:layout_below="@id/tv_tab_checkreport_projectstartdatas"
+    	    />
+    	
+    	<TextView 
+    	    android:id="@+id/tv_tab_checkreport_projectenddata"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:text=""
+    	    android:textColor="@color/blue_2"
+    	    android:paddingTop="8dp"
+    	    android:textSize="14sp"
+    	    android:layout_below="@id/tv_tab_checkreport_projectstartdatas"
+    	    android:layout_toRightOf="@id/tv_tab_checkreport_projectenddatas"
+    	    />
+        
+    	<TextView 
+    	    android:id="@+id/tv_tab_checkreport_checkresults"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_marginLeft="29dp"
+    	    android:text="验收结果："
+            android:textColor="@android:color/black"
+            android:textSize="14sp" 
+            android:paddingTop="8dp"
+            android:layout_below="@id/tv_tab_checkreport_projectenddata"
+    	    />
+    	
+    	<TextView 
+    	    android:id="@+id/tv_tab_checkreport_checkresult"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:text=""
+    	    android:textColor="@color/blue_2"
+    	    android:paddingTop="8dp"
+    	    android:textSize="14sp"
+    	    android:layout_below="@id/tv_tab_checkreport_projectenddata"
+    	    android:layout_toRightOf="@id/tv_tab_checkreport_checkresults"
+    	    />
+    	
+    	<TextView 
+    	    android:id="@+id/tv_tab_checkreport_checkexplains"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_marginLeft="29dp"
+    	    android:text="验收说明："
+            android:textColor="@android:color/black"
+            android:textSize="14sp" 
+            android:paddingTop="8dp"
+            android:layout_below="@id/tv_tab_checkreport_checkresults"
+    	    />
+    	
+    	<TextView 
+    	    android:id="@+id/tv_tab_checkreport_checkexplain"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:text=""
+    	    android:textColor="@color/blue_2"
+    	    android:paddingTop="8dp"
+    	    android:textSize="14sp"
+    	    android:layout_below="@id/tv_tab_checkreport_checkresults"
+    	    android:layout_toRightOf="@id/tv_tab_checkreport_checkexplains"
+    	    />
+    	
+    	<TextView 
+    	    android:id="@+id/tv_tab_checkreport_status"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_marginLeft="29dp"
+    	    android:text="审核状态："
+            android:textColor="@android:color/black"
+            android:textSize="14sp" 
+            android:paddingTop="8dp"
+            android:layout_below="@id/tv_tab_checkreport_checkexplain"
+    	    />
+    	
+    	<TextView 
+    	    android:id="@+id/tv_tab_checkreport_statu"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:text=""
+    	    android:textColor="@color/blue_2"
+    	    android:paddingTop="8dp"
+    	    android:textSize="14sp"
+    	    android:layout_below="@id/tv_tab_checkreport_checkexplain"
+    	    android:layout_toRightOf="@id/tv_tab_checkreport_status"
+    	    />
+    	
+    	
+    	<TextView 
+    	    android:id="@+id/tv_tab_checkreport_fillmans"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_marginLeft="36dp"
+    	    android:text="  填报人："
+            android:textColor="@android:color/black"
+            android:textSize="14sp" 
+            android:paddingTop="8dp"
+            android:layout_below="@id/tv_tab_checkreport_statu"
+    	    />
+    	
+    	<TextView 
+    	    android:id="@+id/tv_tab_checkreport_fillman"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:text=""
+    	    android:textColor="@color/blue_2"
+    	    android:paddingTop="8dp"
+    	    android:textSize="14sp"
+    	    android:layout_below="@id/tv_tab_checkreport_statu"
+    	    android:layout_toRightOf="@id/tv_tab_checkreport_fillmans"
+    	    />
+    	
+    	<TextView 
+    	    android:id="@+id/tv_tab_checkreport_filldatas"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_marginLeft="29dp"
+    	    android:text="填报日期："
+    	    android:textColor="@android:color/black"
+    	    android:paddingTop="8dp"
+    	    android:textSize="14sp"
+    	    android:layout_below="@id/tv_tab_checkreport_fillman"
+    	    />
+    	
+    	<TextView 
+    	    android:id="@+id/tv_tab_checkreport_filldata"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:text=""
+    	    android:textColor="@color/blue_2"
+    	    android:paddingTop="8dp"
+    	    android:textSize="14sp"
+    	    android:layout_below="@id/tv_tab_checkreport_fillman"
+    	    android:layout_toRightOf="@id/tv_tab_checkreport_filldatas"
+    	    />
+    	
+    	<TextView 
+    	    android:id="@+id/tv_tab_projectmember_checkmans"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_marginLeft="36dp"
+    	    android:text="  审核人："
+    	    android:textColor="@android:color/black"
+    	    android:paddingTop="8dp"
+    	    android:textSize="14sp"
+    	    android:layout_below="@id/tv_tab_checkreport_filldata"
+    	    />
+    	
+    	<TextView 
+    	    android:id="@+id/tv_tab_projectmember_checkman"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:text=""
+    	    android:textColor="@color/blue_2"
+    	    android:paddingTop="8dp"
+    	    android:textSize="14sp"
+    	    android:layout_below="@id/tv_tab_checkreport_filldata"
+    	    android:layout_toRightOf="@id/tv_tab_projectmember_checkmans"
+    	    />
+        
+    	<TextView 
+    	    android:id="@+id/tv_tab_checkreport_checkdatas"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_marginLeft="29dp"
+    	    android:text="审核日期："
+    	    android:textColor="@android:color/black"
+    	    android:paddingTop="8dp"
+    	    android:textSize="14sp"
+    	    android:layout_below="@id/tv_tab_projectmember_checkman"
+    	    />
+    	
+    	<TextView 
+    	    android:id="@+id/tv_tab_checkreport_checkdata"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:text=""
+    	    android:textColor="@color/blue_2"
+    	    android:paddingTop="8dp"
+    	    android:textSize="14sp"
+    	    android:layout_below="@id/tv_tab_projectmember_checkman"
+    	    android:layout_toRightOf="@id/tv_tab_checkreport_checkdatas"
+    	    />
+    	
+    </RelativeLayout>
+    
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/rl_report_info"
+        android:background="#e8e6e5"
+        >
+        <Button 
+    	    android:id="@+id/btn_tab_checkreport"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:text="查看验收项"
+    	    android:background="@drawable/public_selector_bg"
+    	    android:gravity="center"
+    	    android:layout_marginTop="28dp"
+    	    android:layout_marginLeft="16dp"
+    	    android:textSize="14sp"
+            android:textColor="#000"
+    	    />
+    	
+    	<Button 
+    	    android:id="@+id/btn_tab_checkreport_check"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:text="审核"
+    	    android:background="@drawable/public_selector_bg"
+    	    android:gravity="center"
+    	    android:layout_marginTop="28dp"
+    	    android:layout_marginRight="14dp"
+    	    android:layout_alignParentRight="true"
+    	    android:textSize="14sp"
+            android:textColor="#000"
+    	    />
+        
+        
+    </RelativeLayout>
+    
+    </RelativeLayout>
+    
+
+    </ScrollView>
+</RelativeLayout>

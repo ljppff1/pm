@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:background="@drawable/sdmain"
+     >
+    
+    
+    <RelativeLayout
+        android:id="@+id/proplan_task_auditbackrate_rl_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/titlebar_bg_nor"
+        >
+        
+       
+       <ImageView
+            android:id="@+id/proplan_task_auditbackrate_iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back" />
+      
+        <TextView
+            style="@style/TextView.Middle.Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="任务反审核"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/proplan_task_auditbackrate_ll_bottom"
+        android:layout_marginRight="10dp"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/bt_selector_bg"
+                        android:id="@+id/proplan_task_auditbackrate_btncancel"
+            android:text="取消"
+            android:textSize="12sp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/bt_selector_bg"
+            android:text="反审核"
+            android:id="@+id/proplan_task_auditbackrate_btnput"
+            android:textSize="12sp" />
+    </LinearLayout>
+    
+    <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/proplan_task_auditbackrate_rl_top"
+        android:layout_above="@id/proplan_task_auditbackrate_ll_bottom"
+        >
+ 
+  <LinearLayout 
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      >
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal"
+        android:background="@drawable/preference_first_item"
+        >
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="预期进度："
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:id="@+id/proplan_task_auditbackrate_tvname"
+            />
+      
+            <TextView
+                android:id="@+id/proplan_task_auditbackrate_tv_progress"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="40dp"
+                android:textSize="15sp"
+                android:text="5%"
+                android:textColor="#ff000000"
+                android:gravity="left|center"
+                android:paddingLeft="5dp">
+	            </TextView>
+              
+            
+    </LinearLayout>
+    
+     
+    
+    
+       <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal"
+        android:background="@drawable/preference_item"
+        >
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="审核进度："
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:id="@+id/proplan_task_auditbackrate_tv_auditprogress1"
+            />
+      
+            <TextView
+                android:id="@+id/proplan_task_auditbackrate_tv_auditprogress"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="40dp"
+                android:textSize="15sp"
+                android:text="10%"
+                android:textColor="#ff000000"
+                android:gravity="left|center"
+                android:paddingLeft="5dp">
+	            </TextView>
+              
+            
+    </LinearLayout>
+       
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        
+        android:background="@drawable/preference_last_item"
+        >
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="审核描述："
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            />
+        
+        <TextView 
+            android:id="@+id/proplan_task_auditbackrate_etdetail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text=""
+                android:minHeight="40dp"
+                android:textColor="#ff000000"
+                android:gravity="left|center"
+                android:paddingLeft="5dp"
+            />
+        
+    </LinearLayout>
+
+    </LinearLayout> 
+    </ScrollView>
+  
+        
+        
+   
+
+    
+    
+
+</RelativeLayout>

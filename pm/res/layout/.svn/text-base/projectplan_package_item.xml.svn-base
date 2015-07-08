@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 项目计划ExpandableListView 组 :工作包 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/listviewbg"
+    android:paddingBottom="8dp"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    android:paddingTop="8dp"
+     >
+    
+    <View
+        android:id="@+id/flag"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:tag="1" />
+    
+    
+    <ImageView 
+        android:id="@+id/iv_projectplan_package_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:scaleType="matrix"
+        android:src="@drawable/mm_submenu" 
+        />
+    
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/iv_projectplan_package_right"
+        android:layout_marginLeft="20dp"
+        >
+        
+        
+        <TextView 
+            android:id="@+id/tv_cb_projectplan_package_names"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="名       称："
+            android:textSize="12sp"
+            android:textColor="@android:color/black"
+            android:paddingLeft="6dp"
+            />
+        
+        <TextView 
+            android:id="@+id/tv_cb_projectplan_package_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="工作包1工作包1"
+            android:textSize="12sp"
+            android:textColor="@color/blue_1"
+            android:layout_toRightOf="@id/tv_cb_projectplan_package_names"
+            android:paddingLeft="2dp"
+            />
+                <TextView 
+            android:id="@+id/tv_cb_projectplan_package_projectby1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="所属项目："
+            android:layout_below="@+id/tv_cb_projectplan_package_name"
+            android:textSize="12sp"
+            android:textColor="@android:color/black"
+            android:paddingLeft="6dp"
+            />
+        
+        <TextView 
+            android:id="@+id/tv_cb_projectplan_package_projectby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_cb_projectplan_package_name"
+            android:text="项目一"
+            android:textSize="12sp"
+            android:textColor="@color/blue_1"
+            android:layout_toRightOf="@id/tv_cb_projectplan_package_projectby1"
+            android:paddingLeft="2dp"
+            />
+        <TextView 
+            android:id="@+id/tv_cb_projectplan_package_startdatas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始日期："
+            android:textSize="12sp"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/tv_cb_projectplan_package_projectby"
+            android:paddingLeft="6dp"
+            android:paddingTop="1dp"
+            />
+        
+        <TextView 
+            android:id="@+id/tv_cb_projectplan_package_startdata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2014-01-01"
+            android:textSize="12sp"
+            android:textColor="@color/blue_2"
+            android:layout_toRightOf="@id/tv_cb_projectplan_package_startdatas"
+            android:layout_below="@id/tv_cb_projectplan_package_projectby"
+            android:paddingTop="1dp"
+            />
+        
+        <TextView 
+            android:id="@+id/tv_cb_projectplan_package_enddatas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="结束日期："
+            android:textSize="12sp"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/tv_cb_projectplan_package_startdatas"
+            android:paddingLeft="6dp"
+            android:paddingTop="1dp"
+            />
+        
+        <TextView 
+            android:id="@+id/tv_cb_projectplan_package_enddata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2014-01-31"
+            android:textSize="12sp"
+            android:textColor="@color/blue_2"
+            android:layout_toRightOf="@id/tv_cb_projectplan_package_enddatas"
+            android:layout_below="@id/tv_cb_projectplan_package_startdatas"
+			android:paddingTop="1dp"
+            />
+        
+        <TextView 
+            android:id="@+id/tv_cb_projectplan_package_durations"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="持续时间："
+            android:textSize="12sp"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/tv_cb_projectplan_package_enddatas"
+            android:paddingLeft="6dp"
+            android:paddingTop="1dp"
+            />
+        
+        <TextView 
+            android:id="@+id/tv_cb_projectplan_package_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30天"
+            android:textSize="12sp"
+            android:textColor="@color/blue_2"
+            android:layout_toRightOf="@id/tv_cb_projectplan_package_durations"
+            android:layout_below="@id/tv_cb_projectplan_package_enddatas"
+            android:paddingTop="1dp"
+            />
+        
+        
+        
+        <TextView 
+            android:id="@+id/tv_cb_projectplan_package_person"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="王五"
+            android:textSize="12sp"
+            android:textColor="@color/blue_2"
+            android:layout_below="@id/tv_cb_projectplan_package_enddatas"
+            android:layout_alignParentRight="true"
+            android:paddingTop="1dp"
+            />
+        
+        <TextView 
+            android:id="@+id/tv_cb_projectplan_package_persons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="负责人："
+            android:textSize="12sp"
+            android:textColor="@android:color/black"
+            android:layout_toLeftOf="@id/tv_cb_projectplan_package_person"
+            android:layout_below="@id/tv_cb_projectplan_package_enddatas"
+            android:paddingLeft="15dp"
+            android:paddingTop="1dp"
+            />
+        
+        
+    </RelativeLayout>
+    
+    
+
+</RelativeLayout>

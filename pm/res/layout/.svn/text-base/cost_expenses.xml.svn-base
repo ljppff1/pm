@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e8e6e5" >
+
+    <!--
+    <RelativeLayout
+        android:id="@+id/costex_rl_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/titlebar_bg_nor" >
+        
+      <ImageView
+            android:id="@+id/costex_iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back" />
+             <ImageView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+            android:clickable="true"
+           android:id="@+id/costex_projectby_iv"
+           android:layout_centerVertical="true"
+           android:paddingRight="10dp"
+           android:layout_alignParentRight="true"
+           android:src="@drawable/down_arrow"
+           />
+      
+        <TextView
+                android:id="@+id/costex_projectby_items"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/costex_iv_back"
+                android:layout_toLeftOf="@id/costex_projectby_iv"
+                android:paddingRight="8dp"
+                android:paddingTop="5dp"
+                android:text="asdfawe"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:layout_centerVertical="true"
+                android:maxLines="1"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:gravity="center"
+              />
+    </RelativeLayout>
+    -->
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/top_title" />
+
+    <RelativeLayout
+        android:id="@+id/costex_rl_search"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/include"
+        android:layout_centerVertical="true"
+        android:background="@color/white" >
+
+        <!-- <Button
+            android:id="@+id/costex_btnsearch"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="5dp"
+            android:text="搜索"
+            android:textSize="12sp" /> -->
+
+        <EditText
+            android:id="@+id/costex_etsearch"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerVertical="true"
+            android:hint="关键字"
+            android:inputType="text"
+            android:textSize="13sp" />
+        
+        <ImageButton 
+            android:id="@+id/costex_btnsearch"
+            android:layout_width="50dp"
+            android:layout_height="22dp"
+            android:layout_centerVertical="true"
+            android:layout_alignRight="@id/costex_etsearch"
+            android:background="@null"
+            android:src="@drawable/search"
+            android:contentDescription="@string/action_settings"
+            android:scaleType="fitCenter"
+            />
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/costex_rl_search"
+        android:layout_marginTop="10dp" >
+
+        <com.superdata.pm.view.XListView
+            android:id="@+id/costex_lv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/tip_line"
+            android:scrollingCache="false" />
+    </RelativeLayout>
+
+</RelativeLayout>

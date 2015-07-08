@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/titlebar_bg_nor"
+    android:orientation="vertical" >
+    
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical"
+	    android:layout_marginLeft="5dp"
+	    android:layout_marginTop="5dp"
+	    android:layout_marginRight="5dp"
+	    android:layout_marginBottom="5dp"
+	    >
+	    
+	    <!-- <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bt_selector_bg"
+            android:onClick="membernumber"
+            android:text="项目成员"
+            android:textColor="#000"
+            android:textSize="14sp" 
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bt_selector_bg"
+            android:onClick="projectcontract"
+            android:text="项目合同"
+            android:textColor="#000"
+            android:textSize="14sp" 
+            android:layout_marginTop="1dp"
+            />
+        
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bt_selector_bg"
+            android:onClick="projectPlan"
+            android:text="项目计划"
+            android:textColor="#000"
+            android:textSize="14sp" 
+            android:layout_marginTop="1dp"
+            />
+        
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bt_selector_bg"
+            android:onClick="checkreport"
+            android:text="验收报告"
+            android:textColor="#000"
+            android:textSize="14sp" 
+            android:layout_marginTop="1dp"
+            />
+         -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/public_selector_bg"
+            android:onClick="projectComment"
+            android:text="项目评论"
+            android:textColor="#000"
+            android:textSize="14sp" 
+            android:layout_marginTop="1dp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/public_selector_bg"
+            android:onClick="projectlog"
+            android:text="项目日志"
+            android:textColor="#000"
+            android:textSize="14sp" 
+            android:layout_marginTop="1dp"
+            />
+	    
+	    
+	</LinearLayout>
+    
+    
+
+</LinearLayout>

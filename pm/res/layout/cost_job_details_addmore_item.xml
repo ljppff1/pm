@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout    
+     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/listviewbg"
+    android:paddingBottom="8dp"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    android:paddingTop="8dp" >
+    <View
+        android:id="@+id/flag"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:tag="1" />
+     <ImageView
+        android:id="@+id/costjob_item_iv_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:scaleType="matrix"
+        android:src="@drawable/mm_submenu" />
+     <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="人力姓名："
+            android:textColor="@android:color/black"
+            android:id="@+id/costjob_item_tv_expname1"
+            android:textSize="10sp" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="王生"
+            android:textColor="@color/blue_1"
+            android:paddingRight="10dp"
+            android:layout_toRightOf="@id/costjob_item_tv_expname1"
+            android:id="@+id/costjob_item_tv_expname"
+            android:textSize="10sp" />
+           <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总 金 额："
+            android:layout_below="@id/costjob_item_tv_expname"
+            android:textColor="@android:color/black"
+            android:id="@+id/costjob_item_tv_money1"
+            android:layout_marginLeft="4dp"
+            android:textSize="10sp"
+       
+             />   
+        <TextView
+            android:layout_toRightOf="@id/costjob_item_tv_money1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1000.10000"
+            android:textColor="@color/blue_3"
+            android:id="@+id/costjob_item_tv_money"
+            android:paddingLeft="2dp"
+            android:layout_below="@id/costjob_item_tv_expname"
+            android:textSize="10sp" />
+              
+        
+        
+</RelativeLayout>

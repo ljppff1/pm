@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 项目合同列表 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/listviewbg"
+    android:paddingBottom="8dp"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    android:paddingTop="8dp"
+     >
+     
+    <View
+        android:id="@+id/flag"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:tag="1" />
+    
+    <ImageView
+        android:id="@+id/iv_projectcontract_listitem_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:scaleType="matrix"
+        android:src="@drawable/mm_submenu" />
+    
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/iv_projectcontract_listitem_right"
+        android:layout_marginLeft="10dp"
+        >
+        
+        <TextView 
+            android:id="@+id/tv_projectcontract_listitem_projects"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="所属项目："
+            android:textColor="@android:color/black"
+            android:textSize="10sp"
+            android:paddingTop="2dp"
+            />
+        
+        <TextView 
+            android:id="@+id/tv_projectcontract_listitem_project"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="项目1"
+            android:textColor="@color/blue_1"
+            android:textSize="10sp"
+            android:paddingTop="2dp"
+            android:layout_toRightOf="@id/tv_projectcontract_listitem_projects"
+            />
+        
+        <TextView
+   		    android:id="@+id/tv_projectcontract_listitem_contractnumbers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_projectcontract_listitem_project"
+            android:text="合同编号："
+            android:textColor="@android:color/black"
+            android:paddingTop="2dp"
+            android:textSize="10sp" />
+        
+        <TextView 
+            android:id="@+id/tv_projectcontract_listitem_contractnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_projectcontract_listitem_project"
+            android:text="000001"
+            android:textColor="@color/blue_2"
+            android:paddingTop="2dp"
+            android:textSize="10sp" 
+            android:layout_toRightOf="@id/tv_projectcontract_listitem_contractnumbers"
+            />
+        
+        
+        <TextView
+            android:id="@+id/tv_projectcontract_listitem_contractnames"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_projectcontract_listitem_project"
+            android:text="合同名称："
+            android:textColor="@android:color/black"
+            android:layout_toRightOf="@id/tv_projectcontract_listitem_contractnumber"
+            android:paddingTop="2dp"
+            android:paddingLeft="15dp"
+            android:textSize="10sp"
+            />   
+            
+        <TextView
+            android:id="@+id/tv_projectcontract_listitem_contractname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_projectcontract_listitem_project"
+            android:text="销售合同"
+            android:textColor="@color/blue_3"
+            android:paddingLeft="2dp"
+            android:layout_toRightOf="@id/tv_projectcontract_listitem_contractnames"
+            android:paddingTop="2dp"
+            android:textSize="10sp" 
+            />
+        
+        <TextView 
+            android:id="@+id/tv_projectcontract_listitem_othercompanys"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="对方公司："
+            android:textColor="@android:color/black"
+            android:textSize="10sp"
+            android:paddingTop="2dp"
+            android:layout_below="@id/tv_projectcontract_listitem_contractnames"
+            />
+        
+        <TextView 
+            android:id="@+id/tv_projectcontract_listitem_othercompany"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="速达软件"
+            android:textColor="@color/blue_2"
+            android:textSize="10sp"
+            android:paddingTop="2dp"
+            android:layout_below="@id/tv_projectcontract_listitem_contractnames"
+            android:layout_toRightOf="@id/tv_projectcontract_listitem_othercompanys"
+            />
+        
+        <TextView 
+            android:id="@+id/tv_projectcontract_listitem_startdatas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始日期："
+            android:textColor="@android:color/black"
+            android:textSize="10sp"
+            android:paddingTop="2dp"
+            android:layout_below="@id/tv_projectcontract_listitem_othercompany"
+            />
+        
+        <TextView 
+            android:id="@+id/tv_projectcontract_listitem_startdata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2014-03-06"
+            android:textColor="@color/blue_2"
+            android:textSize="10sp"
+            android:paddingTop="2dp"
+            android:layout_below="@id/tv_projectcontract_listitem_othercompany"
+            android:layout_toRightOf="@id/tv_projectcontract_listitem_startdatas"
+            />
+        
+        <TextView 
+            android:id="@+id/tv_projectcontract_listitem_enddatas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="结束日期："
+            android:textColor="@android:color/black"
+            android:textSize="10sp"
+            android:paddingTop="2dp"
+            android:layout_below="@id/tv_projectcontract_listitem_startdata"
+            />
+        
+        <TextView 
+            android:id="@+id/tv_projectcontract_listitem_enddata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2014-03-06"
+            android:textColor="@color/blue_2"
+            android:textSize="10sp"
+            android:paddingTop="2dp"
+            android:layout_below="@id/tv_projectcontract_listitem_startdata"
+            android:layout_toRightOf="@id/tv_projectcontract_listitem_enddatas"
+            />
+        
+        <TextView 
+            android:id="@+id/tv_projectcontract_listitem_contractsums"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="合同金额："
+            android:textColor="@android:color/black"
+            android:textSize="10sp"
+            android:paddingTop="2dp"
+            android:layout_below="@id/tv_projectcontract_listitem_enddata"
+            />
+        
+        <TextView 
+            android:id="@+id/tv_projectcontract_listitem_contractsum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30000"
+            android:textColor="@color/blue_2"
+            android:textSize="10sp"
+            android:paddingTop="2dp"
+            android:layout_below="@id/tv_projectcontract_listitem_enddata"
+            android:layout_toRightOf="@id/tv_projectcontract_listitem_contractsums"
+            />
+        
+        <TextView 
+            android:id="@+id/tv_projectcontract_listitem_annexnumers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="附件个数："
+            android:textColor="@android:color/black"
+            android:textSize="10sp"
+            android:paddingTop="2dp"
+            android:layout_below="@id/tv_projectcontract_listitem_enddata"
+            android:layout_toRightOf="@id/tv_projectcontract_listitem_contractsum"
+            android:paddingLeft="15dp"
+            />
+        
+        <TextView 
+            android:id="@+id/tv_projectcontract_listitem_annexnumer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30000"
+            android:textColor="@color/blue_2"
+            android:textSize="10sp"
+            android:paddingTop="2dp"
+            android:layout_below="@id/tv_projectcontract_listitem_enddata"
+            android:layout_toRightOf="@id/tv_projectcontract_listitem_annexnumers"
+            />
+        
+        
+        
+    </RelativeLayout>
+    
+
+</RelativeLayout>

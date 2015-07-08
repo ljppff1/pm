@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/companydocuments_listitem"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/listviewbg"
+    android:paddingBottom="8dp"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    android:paddingTop="8dp" >
+
+    <View
+        android:id="@+id/flag"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:tag="1" />
+    
+    <ImageView
+        android:id="@+id/iv_companydocuments_listitem_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:scaleType="matrix"
+        android:src="@drawable/mm_submenu" />
+    
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/iv_companydocuments_listitem_right"
+       >
+   		<TextView
+   		    android:id="@+id/tv_companydocuments_listitem_documentsnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="文档编号："
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+        
+        <TextView
+            android:id="@+id/tv_companydocuments_listitem_documentsnumbers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WD_JPG_TZ"
+            android:paddingLeft="2dp"
+            android:textColor="@color/blue_1"
+            android:layout_toRightOf="@id/tv_companydocuments_listitem_documentsnumber"
+            android:textSize="10sp" />
+        <TextView
+            android:id="@+id/tv_companydocuments_listitem_documentsname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="文档名称："
+            android:textColor="@android:color/black"
+            android:layout_toRightOf="@id/tv_companydocuments_listitem_documentsnumbers"
+            android:paddingLeft="15dp"
+            android:textSize="10sp" />   
+        <TextView
+            android:id="@+id/tv_companydocuments_listitem_documentsnames"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="施工图纸.jpg"
+            android:textColor="@color/blue_3"
+            android:paddingLeft="2dp"
+            android:layout_toRightOf="@id/tv_companydocuments_listitem_documentsname"
+            android:textSize="10sp" />
+        
+        
+        <TextView
+            android:id="@+id/tv_companydocuments_listitem_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="文档类别："
+            android:paddingTop="1dp"
+            android:layout_below="@id/tv_companydocuments_listitem_documentsnumber"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+        
+        <TextView
+            android:id="@+id/tv_companydocuments_listitem_categories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="类别一"
+            android:paddingTop="1dp"
+            android:layout_below="@id/tv_companydocuments_listitem_documentsnumber"
+            android:layout_toRightOf="@id/tv_companydocuments_listitem_category"
+            android:textColor="@color/blue_2"
+            android:textSize="10sp" /> 
+        
+              
+        <TextView
+            android:id="@+id/tv_companydocuments_listitem_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="内        容："
+            android:paddingTop="1dp"
+            android:layout_below="@id/tv_companydocuments_listitem_categories"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+                      
+        <TextView
+            android:id="@+id/tv_companydocuments_listitem_states"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:text="这个行政文档，最多显示2行"
+            android:ellipsize="end"
+            android:paddingTop="1dp"
+            android:layout_below="@id/tv_companydocuments_listitem_categories"
+            android:layout_toRightOf="@id/tv_companydocuments_listitem_state"
+            android:textColor="@color/blue_2"
+            android:textSize="10sp" />
+        
+               
+        
+      
+
+        <TextView
+            android:id="@+id/tv_companydocuments_listitem_createtimes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="2014/6/30"
+            android:textColor="@color/blue"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_companydocuments_listitem_states"
+            android:textSize="8sp" />
+        
+        <TextView
+            android:id="@+id/tv_companydocuments_listitem_createtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="创建时间:"
+            android:textColor="@android:color/black"
+            android:layout_toLeftOf="@id/tv_companydocuments_listitem_createtimes"
+            android:layout_below="@id/tv_companydocuments_listitem_states"
+            android:textSize="8sp" />
+        
+          
+        <TextView
+            android:id="@+id/tv_companydocuments_listitem_creaters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="李总"
+            android:textColor="@color/blue"
+            android:layout_toLeftOf="@id/tv_companydocuments_listitem_createtime"
+            android:layout_below="@id/tv_companydocuments_listitem_states"
+            android:layout_marginRight="10dp"
+            android:textSize="8sp" />
+        
+        <TextView
+            android:id="@+id/tv_companydocuments_listitem_creater"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="创建人："
+            android:textColor="@android:color/black"
+            android:layout_toLeftOf="@id/tv_companydocuments_listitem_creaters"
+            android:layout_below="@id/tv_companydocuments_listitem_states"
+            android:textSize="8sp" />
+      
+        
+       
+          
+    
+	</RelativeLayout>
+    
+
+   
+
+</RelativeLayout>

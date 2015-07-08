@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     >
+    
+    
+    <!-- 顶部标题 -->
+    <!-- <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/titlebar_left" >
+
+        <ImageView
+            android:id="@+id/ll_top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:src="@drawable/back" 
+            android:paddingLeft="10dp"
+            android:background="@drawable/titlebar_left"
+            android:layout_alignParentLeft="true"
+            />
+        
+        <TextView
+            android:id="@+id/tv_top_title"
+            style="@style/TextView.Middle.Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="asdasd"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            />
+        
+    </RelativeLayout> -->
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical" 
+        android:orientation="horizontal"
+        android:background="#0e8448"
+        >
+        
+        <ImageView
+            android:id="@+id/ll_top_title"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="18dp"
+            android:clickable="true"
+            android:src="@drawable/ic_back" 
+            android:background="@drawable/titlebar_left"
+            android:layout_marginLeft="10dp"
+            />
+        
+        <TextView
+            android:id="@+id/tv_top_title"
+            style="@style/TextView.Middle.Black"
+            android:layout_width="0dp"
+            android:layout_weight="9"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="20sp"
+	        android:ellipsize="end"
+	        android:maxLines="2"
+            />
+        
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            />
+        
+    </LinearLayout>
+    
+
+</RelativeLayout>

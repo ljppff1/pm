@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#e8e6e5" >
+
+    <!-- <RelativeLayout
+        android:id="@+id/costmat_de_rl_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/titlebar_bg_nor"
+        >
+        
+      <ImageView
+            android:id="@+id/costmat_de_iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back" />
+      
+        <TextView
+            android:id="@+id/tv_material_detail_title"
+            style="@style/TextView.Middle.Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="HR0001明细"
+            android:textColor="@color/white" />
+    </RelativeLayout> -->
+    
+    <include android:id="@+id/include"
+        layout="@layout/top_title" />
+
+         <RelativeLayout
+            android:id="@+id/costmat_de_rl_isverify"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/include"
+            android:clickable="true"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:id="@+id/costmat_de_item_tv_isverify1"
+                android:text="审核状态："
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                 />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:id="@+id/costmat_de_item_tv_isverify"
+                android:text="未审核"
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/costmat_de_item_tv_isverify1"
+                android:textSize="14sp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                                android:paddingRight="10dp"
+                
+                android:scaleType="matrix"
+                android:src="@drawable/mm_submenu" />
+        </RelativeLayout>
+   
+              <RelativeLayout
+                  android:paddingTop="10dp"
+                  android:id="@+id/costmat_de_rl_expdetail"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@id/costmat_de_rl_isverify"
+                  android:clickable="true"
+                  android:gravity="center_vertical" >
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:padding="8dp"
+                      android:text="材料单明细"
+                      android:textColor="@color/purple"
+                      android:textSize="10sp" />
+
+                  
+              </RelativeLayout>
+        
+            <ListView 
+                android:id="@+id/costmat_de_lv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/costmat_de_rl_expdetail"
+                android:layout_marginTop="10dp"
+                     android:paddingLeft="5dp"
+                     android:paddingRight="5dp"
+                ></ListView>
+   
+
+
+</RelativeLayout>

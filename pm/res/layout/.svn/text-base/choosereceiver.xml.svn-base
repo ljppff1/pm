@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e8e6e5"  >
+    
+    
+    <include layout="@layout/top_title"
+	    android:id="@+id/include" />
+    
+    
+    <RelativeLayout 
+	    android:id="@+id/rl_choosereceiver_search"
+	    android:layout_below="@id/include"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+	    >
+	    
+	    <!-- <Button 
+            android:id="@+id/btn_choosereceiver_search"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="5dp"
+            android:text="搜索"
+            android:textSize="12sp"
+            android:background="@drawable/public_selector_bg"
+            /> -->
+	    
+	    <Button 
+	        android:id="@+id/btn_choosereceiver_selectall"
+	        android:layout_width="wrap_content"
+	        android:layout_height="25dp"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="10dp"
+	        android:text="全选"
+	        android:textSize="12sp"
+	        android:background="@drawable/public_selector_bg"
+	        />
+        
+        <EditText 
+            android:id="@+id/et_choosereceiver_search"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_toRightOf="@id/btn_choosereceiver_selectall"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="2dp"
+            android:hint="关键字"
+            android:inputType="text"
+            android:textSize="13sp" 
+            />
+        
+        <ImageButton 
+            android:id="@+id/btn_choosereceiver_search"
+            android:layout_width="50dp"
+            android:layout_height="22dp"
+            android:layout_alignRight="@id/et_choosereceiver_search"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:src="@drawable/search"
+            android:contentDescription="@string/action_settings"
+            android:scaleType="fitCenter"
+            />
+	    
+	</RelativeLayout>
+	
+    
+    
+    <LinearLayout 
+        android:id="@+id/rl_receiver_confirm"
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        >
+        
+        <Button 
+            android:id="@+id/btn_receiver_confirm"
+            android:layout_width="0dp"
+            android:layout_weight="9"
+            android:layout_height="25dp"
+            android:text="完成"
+            android:textSize="12sp" 
+            android:background="@drawable/public_selector_bg"
+            />
+        
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text=""
+            />
+        
+        <Button 
+            android:id="@+id/btn_receiver_cancel"
+            android:layout_width="0dp"
+            android:layout_weight="9"
+            android:layout_height="25dp"
+            android:text="取消"
+            android:textSize="12sp" 
+            android:background="@drawable/public_selector_bg"
+            />
+        
+    </LinearLayout>
+	
+    
+    <RelativeLayout 
+        android:layout_below="@id/rl_choosereceiver_search"
+        android:layout_above="@id/rl_receiver_confirm"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dp"
+        >
+        
+        
+        <ListView
+            android:id="@+id/lv_choosereceiver_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/tip_line"
+            android:scrollingCache="false"
+            ></ListView>
+        
+    </RelativeLayout>
+    
+
+</RelativeLayout>

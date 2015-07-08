@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/listview_item"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/listviewbg"
+    android:paddingBottom="8dp"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    android:paddingTop="8dp" >
+
+    <View
+        android:id="@+id/flag"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:tag="1" />
+    
+    <ImageView
+        android:id="@+id/costjob_item_iv_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:scaleType="matrix"
+        android:src="@drawable/mm_submenu" />
+    
+  
+
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/costjob_item_iv_right"
+       >
+   <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="人力单号："
+            android:textColor="@android:color/black"
+            android:id="@+id/costjob_item_tv_humannumber1"
+            android:textSize="10sp" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HR0001"
+            android:paddingLeft="2dp"
+            android:textColor="@color/blue_1"
+            android:layout_toRightOf="@id/costjob_item_tv_humannumber1"
+            android:id="@+id/costjob_item_tv_humannumber"
+            android:textSize="10sp" />
+           <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总金额："
+            android:textColor="@android:color/black"
+            android:id="@+id/costjob_item_tv_money1"
+            android:layout_toRightOf="@id/costjob_item_tv_humannumber"
+            android:paddingLeft="15dp"
+            android:textSize="10sp" />   
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1000000"
+            android:textColor="@color/blue_3"
+            android:id="@+id/costjob_item_tv_money"
+            android:paddingLeft="2dp"
+            android:layout_toRightOf="@id/costjob_item_tv_money1"
+            android:textSize="10sp" />
+              
+             <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="费用描述："
+            android:paddingTop="1dp"
+             android:layout_below="@id/costjob_item_tv_humannumber1"
+             android:textColor="@android:color/black"
+            android:id="@+id/costjob_item_tv_remark1"
+            android:textSize="10sp" />
+                      <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:text="项目经理a做了什么事情，然后一周，总金额 对应"
+            android:paddingTop="1dp"
+                         android:layout_below="@id/costjob_item_tv_humannumber1"
+             android:layout_toRightOf="@id/costjob_item_tv_remark1"
+             android:textColor="@color/blue_2"
+            android:id="@+id/costjob_item_tv_remark"
+            android:textSize="10sp" />
+        
+               
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="所属项目："
+            android:paddingTop="1dp"
+             android:layout_below="@id/costjob_item_tv_remark"
+             android:textColor="@android:color/black"
+            android:id="@+id/costjob_item_tv_projectby1"
+            android:textSize="10sp" />
+                      <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="项目一"
+            android:paddingTop="1dp"
+                         android:layout_below="@id/costjob_item_tv_remark"
+             android:layout_toRightOf="@id/costjob_item_tv_projectby1"
+             android:textColor="@color/blue_2"
+            android:id="@+id/costjob_item_tv_projectby"
+            android:textSize="10sp" /> 
+      
+
+          
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="未审核"
+            android:textColor="@color/red"
+            android:id="@+id/costjob_item_tv_isverify"
+            android:layout_below="@id/costjob_item_tv_projectby1"
+            android:textSize="8sp" />
+      
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="2014/6/30"
+            android:textColor="@color/blue"
+            android:id="@+id/costjob_item_tv_date"
+           android:layout_alignParentRight="true"
+           android:layout_alignParentBottom="true"
+            
+            android:textSize="8sp" />
+       
+          
+    
+</RelativeLayout>
+    
+
+   
+
+</RelativeLayout>

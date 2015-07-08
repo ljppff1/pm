@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 项目进度     审核进度-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sdmain"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/top_title" />
+    
+    
+    <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/preference_first_item"
+                android:orientation="horizontal"
+                >
+                
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="任务名称："
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    />
+                
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="是否跟黑色的风格接哦"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:padding="8dp"
+                    />
+                
+            </LinearLayout>
+            
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/preference_item"
+                android:orientation="horizontal"
+                >
+                
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="所属项目："
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    />
+                
+                 <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="是否跟黑色的风格接哦"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:padding="8dp"
+                    />
+                
+            </LinearLayout>
+            
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/preference_item"
+                android:orientation="horizontal"
+                >
+                
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="开始日期："
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    />
+                
+                 <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2014-02-06"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:padding="8dp"
+                    />
+                
+            </LinearLayout>
+            
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/preference_item"
+                android:orientation="horizontal"
+                >
+                
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="结束日期："
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    />
+                
+                 <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2014-07-01"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:padding="8dp"
+                    />
+                 
+            </LinearLayout>
+            
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/preference_item"
+                android:orientation="horizontal"
+                >
+                
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="预计进度："
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    />
+                
+                 <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="60%"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:padding="8dp"
+                    />
+                
+            </LinearLayout>
+            
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/preference_item"
+                android:orientation="horizontal"
+                >
+                
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="审核进度："
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    />
+                
+                 <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="55%"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:padding="8dp"
+                    />
+                
+            </LinearLayout>
+            
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/preference_item"
+                android:orientation="horizontal"
+                >
+                
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="描述："
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    />
+                
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="是否跟黑色的风格接哦范德萨告诉对方更好更规范和家里家电奋斗过恢复规划视台官方"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:padding="8dp"
+                    />
+                
+            </LinearLayout>
+            
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/preference_item"
+                android:orientation="horizontal"
+                >
+                
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="项目附件："
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    />
+                
+                <Button 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bt_selector_bg"
+                    android:text="选择文件" 
+                    android:textSize="11sp"
+                    android:padding="8dp"
+                    />
+                
+            </LinearLayout>
+            
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/preference_item"
+                android:orientation="horizontal"
+                >
+                
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="填报人："
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    />
+                
+                 <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="张三"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:padding="8dp"
+                    />
+                
+            </LinearLayout>	
+            
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/preference_last_item"
+                android:orientation="horizontal"
+                >
+                
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="审核人："
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    />
+                
+                 <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="赵丽"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:padding="8dp"
+                    />
+                
+            </LinearLayout>
+            
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:gravity="bottom"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bt_selector_bg"
+                    android:text="审核"
+                    android:textSize="12sp" />
+
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bt_selector_bg"
+                    android:text="取消"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+        
+    </ScrollView>
+    
+
+</LinearLayout>

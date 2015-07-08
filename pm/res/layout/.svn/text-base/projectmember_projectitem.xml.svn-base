@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 项目成员 项目列表 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rl_projectmember_pro_item"
+    android:background="@drawable/listviewbg"
+    android:paddingBottom="8dp"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    android:paddingTop="8dp"
+    >
+     
+    <View
+        android:id="@+id/flag"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:tag="1" />
+    
+    
+    <ImageView 
+        android:id="@+id/iv_projectmember_pro_item_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:scaleType="matrix"
+        android:src="@drawable/mm_submenu" 
+        />
+    
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/iv_projectmember_pro_item_right"
+        >
+        
+        
+        <TextView 
+            android:id="@+id/tv_projectmember_pro_item_numbers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="项目编号："
+            android:textSize="12sp"
+            android:textColor="@android:color/black"
+            android:paddingLeft="6dp"
+            />
+        
+        <TextView 
+            android:id="@+id/tv_projectmember_pro_item_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A0010101"
+            android:textSize="12sp"
+            android:textColor="@color/blue_1"
+            android:layout_toRightOf="@id/tv_projectmember_pro_item_numbers"
+            android:paddingLeft="2dp"
+            />
+        
+        <TextView 
+            android:id="@+id/tv_projectmember_pro_item_names"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="项目名称："
+            android:textSize="12sp"
+            android:textColor="@android:color/black"
+            android:layout_toRightOf="@id/tv_projectmember_pro_item_number"
+            android:paddingLeft="10dp"
+            />
+        
+        <TextView 
+            android:id="@+id/tv_projectmember_pro_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="项目1"
+            android:textSize="12sp"
+            android:textColor="@color/blue_3"
+            android:layout_toRightOf="@id/tv_projectmember_pro_item_names"
+            android:paddingLeft="2dp"
+            />
+        
+        <TextView 
+            android:id="@+id/tv_projectmember_pro_item_startdatas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始日期："
+            android:textSize="12sp"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/tv_projectmember_pro_item_numbers"
+            android:paddingLeft="6dp"
+            android:paddingTop="2dp"
+            />
+        
+        <TextView 
+            android:id="@+id/tv_projectmember_pro_item_startdata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2014-01-01"
+            android:textSize="12sp"
+            android:textColor="@color/blue_2"
+            android:layout_toRightOf="@id/tv_projectmember_pro_item_startdatas"
+            android:layout_below="@id/tv_projectmember_pro_item_numbers"
+            android:paddingTop="2dp"
+            />
+        
+        <TextView 
+            android:id="@+id/tv_projectmember_pro_item_enddatas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="结束日期："
+            android:textSize="12sp"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/tv_projectmember_pro_item_startdatas"
+            android:paddingLeft="6dp"
+            android:paddingTop="2dp"
+            />
+        
+        
+        <TextView 
+            android:id="@+id/tv_projectmember_pro_item_enddata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2014-04-31"
+            android:textSize="12sp"
+            android:textColor="@color/blue_2"
+            android:layout_toRightOf="@id/tv_projectmember_pro_item_enddatas"
+            android:layout_below="@id/tv_projectmember_pro_item_startdatas"
+            android:paddingTop="2dp"
+            />
+        
+        
+        <TextView 
+            android:id="@+id/tv_projectmember_pro_item_managers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="项目经理："
+            android:textSize="12sp"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/tv_projectmember_pro_item_enddatas"
+            android:paddingLeft="6dp"
+            android:paddingTop="2dp"
+            />
+        
+        <TextView 
+            android:id="@+id/tv_projectmember_pro_item_manager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="张三"
+            android:textSize="12sp"
+            android:textColor="@color/blue_2"
+            android:layout_toRightOf="@id/tv_projectmember_pro_item_managers"
+            android:layout_below="@id/tv_projectmember_pro_item_enddatas"
+            android:paddingTop="2dp"
+            />
+        
+        
+        
+        <TextView 
+            android:id="@+id/tv_projectmember_pro_item_completenesses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="完成度 ："
+            android:textSize="12sp"
+            android:textColor="@android:color/black"
+            android:layout_toRightOf="@id/tv_projectmember_pro_item_manager"
+            android:layout_below="@id/tv_projectmember_pro_item_enddatas"
+            android:paddingTop="2dp"
+            android:paddingLeft="15dp"
+            />
+        
+        <TextView 
+            android:id="@+id/tv_projectmember_pro_item_completeness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50%"
+            android:textSize="12sp"
+            android:textColor="@color/blue_2"
+            android:layout_toRightOf="@id/tv_projectmember_pro_item_completenesses"
+            android:layout_below="@id/tv_projectmember_pro_item_enddatas"
+            android:paddingTop="2dp"
+            />
+        
+        
+        <TextView 
+            android:id="@+id/tv_projectmember_pro_item_createtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2014-01-01 9:00"
+            android:textSize="9sp"
+            android:textColor="@color/blue"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_projectmember_pro_item_completeness"
+            android:layout_marginRight="10dp"
+            android:paddingTop="2dp"
+            />
+        
+        <TextView 
+            android:id="@+id/tv_projectmember_pro_item_createtimes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="立项日期："
+            android:textSize="9sp"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/tv_projectmember_pro_item_completeness"
+            android:layout_toLeftOf="@id/tv_projectmember_pro_item_createtime"
+            android:paddingTop="2dp"
+            />
+        
+        
+    </RelativeLayout>
+    
+
+</RelativeLayout>
